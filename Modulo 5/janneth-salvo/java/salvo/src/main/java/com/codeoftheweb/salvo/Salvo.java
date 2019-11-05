@@ -10,6 +10,8 @@ import java.util.Set;
 
 @Entity
 public class Salvo {
+
+  //declarar variables
   @Id
   @GeneratedValue(strategy = GenerationType.AUTO, generator = "native")
   @GenericGenerator(name ="native", strategy = "native")
@@ -25,6 +27,8 @@ public class Salvo {
   @Column(name = "location")
   private Set<String> locations;
 
+  //constructor
+
   public Salvo() {
   }
 
@@ -33,6 +37,7 @@ public class Salvo {
     this.turno = turno;
     this.locations = locations;
   }
+  //get and set
 
   public long getId() {
     return id;
@@ -43,8 +48,6 @@ public class Salvo {
   public void setGamePlayer(GamePlayer gamePlayer) {
     this.gamePlayer = gamePlayer;
   }
-
-
   public int getTurno() {
     return turno;
   }
@@ -63,7 +66,6 @@ public class Salvo {
     Map<String,Object> dto=new LinkedHashMap<>();
     dto.put("turno",getTurno());
     dto.put("player",this.getGamePlayer().getPlayer().getId());
-
     dto.put("salvoLocations",getLocations());
     return dto;
   }
