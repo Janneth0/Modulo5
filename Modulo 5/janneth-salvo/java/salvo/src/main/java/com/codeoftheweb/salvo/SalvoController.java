@@ -1,7 +1,7 @@
 package com.codeoftheweb.salvo;
 
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.http.RequestEntity;
+import org.springframework.security.core.Authentication;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.LinkedHashMap;
@@ -23,12 +23,24 @@ public class SalvoController {
     private PlayerRepository playerRepository;
 
     @RequestMapping("/games")
-    public List<Map<String,Object>> getGames(){
-        return gameRepository.findAll()
-                             .stream()
-                             .map(Game -> makeGameDTO(Game))
-                             .collect(Collectors.toList());
+
+    public Map<String,Object> getGames(Authentication authentication) {
+        Map<String, Object> dto = new LinkedHashMap<String, Object>();
+
+        if (authentication != null) {
+            Player player = playerRepository.findByUserName(authentication.getName()).get();
+            dto.put("player", player.makePlayerDTO());
+        } else {
+            dto.put("player", "Guest");
+        }
+        dto.put("games", gameRepository.findAll()
+                .stream()
+                .map(game -> makeGameDTO(game))
+                .collect(Collectors.toList())
+        );
+        return dto;
     }
+
     public Map<String,Object> makeGameDTO(Game game){
         Map<String,Object> dto=new LinkedHashMap<String, Object>();
         dto.put("id", game.getId());
