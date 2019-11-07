@@ -1,6 +1,9 @@
 package com.codeoftheweb.salvo;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.HttpStatus;
+import org.springframework.http.ResponseEntity;
+import org.springframework.security.authentication.AnonymousAuthenticationToken;
 import org.springframework.security.core.Authentication;
 import org.springframework.web.bind.annotation.*;
 
@@ -40,6 +43,9 @@ public class SalvoController {
         );
         return dto;
     }
+    private boolean isGuest(Authentication authentication) {
+        return authentication == null || authentication instanceof AnonymousAuthenticationToken;
+    }
 
     public Map<String,Object> makeGameDTO(Game game){
         Map<String,Object> dto=new LinkedHashMap<String, Object>();
@@ -68,8 +74,20 @@ public class SalvoController {
         if(isGuest(authentication)){
             return new ResponseEntity<>(makeMap("ERRO PASO ALGO"))
     }*/
+    @RequestMapping(path = "/players", method = RequestMethod.POST)
+    public ResponseEntity<Object> register(
+            @RequestParam String email, @RequestParam String password) {
 
+        if (email.isEmpty() || password.isEmpty()) {
+            return new ResponseEntity<>("Error", HttpStatus.FORBIDDEN);
+        }
+        if (playerRepository.findByUserName(email).orElse(null) !=  null) {
+            return new ResponseEntity<>("Nombre en uso", HttpStatus.FORBIDDEN);
+        }
 
+        playerRepository.save(new Player(email,password));
+        return new ResponseEntity<>(HttpStatus.CREATED);
+    }
 
 
 

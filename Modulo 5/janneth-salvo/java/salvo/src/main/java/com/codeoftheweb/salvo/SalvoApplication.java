@@ -58,6 +58,14 @@ public class  SalvoApplication {
 
 			playerRepository.saveAll(Arrays.asList(p1, p2, p3, p4));
 
+			/*
+			* $.post("/api/login", { username: "j.bauer@ctu.gov", password: "24" }).done(function() { console.log("logged in!"); })
+			* $.post("/api/logout").done(function() { console.log("logged out"); })
+			* */
+
+
+
+
 			////DATOS DE GAME
 			Date date = new Date();
 			Date date2 = Date.from(date.toInstant().plusSeconds(3600));
