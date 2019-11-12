@@ -11,12 +11,25 @@ function loadData(){
     $.get('/api/game_view/'+getParameterByName('gp'))
         .done(function(data) {
             let playerInfo;
-            if(data.gamePlayers[0].id == getParameterByName('gp'))
+            if(data.gamePlayers.length==2){
+                 if(data.gamePlayers[0].id == getParameterByName("gp")){
+                 playerInfo = [data.gamePlayers[0].player.email,data.gamePlayers[1].player.email];
+                 }
+                 else{
+                 playerInfo = [data.gamePlayers[1].player.email,data.gamePlayers[0].player.email];
+                 $('#playerInfo').text(playerInfo[0].player.email + '(you) vs ' + playerInfo[1].player.email);
+                 }
+            }
+            else if(data.gamePlayers.length==1){
+            playerInfo = data.gamePlayers;
+            $('#playerInfo').text(playerInfo[0].player.email + '(you) VS Falta jugador');
+            }
+            /*if(data.gamePlayers[0].id == getParameterByName('gp'))
                 playerInfo = [data.gamePlayers[0].player.email,data.gamePlayers[1].player.email];
             else
                 playerInfo = [data.gamePlayers[1].player.email,data.gamePlayers[0].player.email];
 
-            $('#playerInfo').text(playerInfo[0] + '(you) vs ' + playerInfo[1]);
+            $('#playerInfo').text(playerInfo[0] + '(you) vs ' + playerInfo[1]);*/
 
             data.ships.forEach(function(shipPiece){
                 shipPiece.shipLocations.forEach(function(location){

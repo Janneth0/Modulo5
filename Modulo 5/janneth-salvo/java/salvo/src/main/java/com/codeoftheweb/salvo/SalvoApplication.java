@@ -64,8 +64,6 @@ public class  SalvoApplication {
 			* */
 
 
-
-
 			////DATOS DE GAME
 			Date date = new Date();
 			Date date2 = Date.from(date.toInstant().plusSeconds(3600));
@@ -89,36 +87,36 @@ public class  SalvoApplication {
 
 			///DATOS DE GAMEPLAYER
 			//Game1
-			GamePlayer gp1 = new GamePlayer(date, g1, p1);
-			GamePlayer gp2 = new GamePlayer(date, g1, p2);
+			GamePlayer gp1 = new GamePlayer(g1, p1);
+			GamePlayer gp2 = new GamePlayer(g1, p2);
 
 			//Game2
-			GamePlayer gp3 = new GamePlayer(date, g2, p1);
-			GamePlayer gp4 = new GamePlayer(date, g2, p2);
+			GamePlayer gp3 = new GamePlayer(g2, p1);
+			GamePlayer gp4 = new GamePlayer(g2, p2);
 
 			//Game3
-			GamePlayer gp5 = new GamePlayer(date, g3, p2);
-			GamePlayer gp6 = new GamePlayer(date, g3, p4);
+			GamePlayer gp5 = new GamePlayer(g3, p2);
+			GamePlayer gp6 = new GamePlayer(g3, p4);
 
 			//Game4
-			GamePlayer gp7 = new GamePlayer(date, g4, p2);
-			GamePlayer gp8 = new GamePlayer(date, g4, p3);
+			GamePlayer gp7 = new GamePlayer(g4, p2);
+			GamePlayer gp8 = new GamePlayer(g4, p3);
 
 			//Game5-------------------------
-			GamePlayer gp9 = new GamePlayer(date, g5, p4);
-			GamePlayer gp10 = new GamePlayer(date, g5, p1);
+			GamePlayer gp9 = new GamePlayer(g5, p4);
+			GamePlayer gp10 = new GamePlayer(g5, p1);
 
 			//Game6-------------------
-			GamePlayer gp11 = new GamePlayer(date, g6, p3);
+			GamePlayer gp11 = new GamePlayer(g6, p3);
 			//GamePlayer gp12 = new GamePlayer(date,g6);
 
 			//Game7---------------
-			GamePlayer gp13 = new GamePlayer(date, g7, p4);
+			GamePlayer gp13 = new GamePlayer(g7, p4);
 			//GamePlayer gp14 = new GamePlayer(date,g7,);
 
 			//Game8--------
-			GamePlayer gp15 = new GamePlayer(date, g8, p3);
-			GamePlayer gp16 = new GamePlayer(date, g8, p4);
+			GamePlayer gp15 = new GamePlayer(g8, p3);
+			GamePlayer gp16 = new GamePlayer(g8, p4);
 
 			gamePlayerRepository.saveAll(Arrays.asList(gp1, gp2, gp3, gp4, gp5, gp6, gp7, gp8, gp9, gp10, gp11, gp13, gp15, gp16));
 			//gamePlayerRepository.save(gp12);
