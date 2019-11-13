@@ -1,11 +1,36 @@
 crearTabla();
 leaderboard();
+updateView();
+
+function fetchJson(url) {
+        return fetch(url, {
+            method: 'GET',
+            credentials: 'include'
+        }).then(function (response) {
+            if (response.ok) {
+                return response.json();
+            }
+            throw new Error(response.statusText);
+        });
+}
+
+function updateJson() {
+        fetchJson('/api/games').then(function (json) {
+            // do something with the JSON
+            data = json;
+            gamesData = data.games;
+            updateView();
+        }).catch(function (error) {
+            // do something getting JSON fails
+        });
+}
+
 
 function leaderboard() {
 
     $.get('/api/leaderBoard')
         .done(function (data) {
-        console.log(data);
+        console.log("leaderboard"+data);
 
             data.sort((a, b) => {
                 return b.score.puntajeTotal - a.score.puntajeTotal
@@ -14,18 +39,118 @@ function leaderboard() {
             scoreTable(data);
         });
 }
+
+function updateView() {
+        showGamesTable(gamesData);
+        addScoresToPlayersArray(getPlayers(gamesData));
+        showScoreBoard(playersArray);
+        if (data.player == "Guest") {
+            $('#currentPlayer').text(data.player);
+            $('#logout-form').hide("slow");
+            $('#login-form').show("slow");
+            $("#createGameForm").hide();
+
+        } else {
+
+            $('#currentPlayer').text(data.player.email);
+            $('#login-form').hide("slow");
+            $('#logout-form').show("slow");
+
+        }
+}
+
+function showGamesTable(data) {
+        // let mytable = $('<table></table>').attr({id: "gamesTable", class: ""});
+        var table = "#gamesList tbody";
+        var gpid;
+        $(table).empty();
+        for (var i = 0; i < data.length; i++) {
+
+            var isLoggedPlayer = false;
+            var joinButtonHtml = null;
+
+            var DateCreated = new Date(gamesData[i].created);
+            DateCreated = DateCreated.getMonth() + 1 + "/" + DateCreated.getDate() + " " + DateCreated.getHours() + ":" + DateCreated.getMinutes();
+            var row = $('<tr></tr>').prependTo(table);
+            $('<td class="textCenter">' + gamesData[i].id + '</td>').appendTo(row);
+            $('<td>' + DateCreated + '</td>').appendTo(row);
+
+
+            for (var j = 0; j < gamesData[i].gamePlayers.length; j++) {
+
+
+                if (gamesData[i].gamePlayers.length == 2) {
+                    $('<td>' + gamesData[i].gamePlayers[j].player.email + '</td>').appendTo(row);
+                }
+                if (gamesData[i].gamePlayers.length == 1 && (data.player == "Guest" || data.player.id == gamesData[i].gamePlayers[j].player.id)) {
+                    $('<td>' + gamesData[i].gamePlayers[0].player.email + '</td><td class="yellow500">WAITING FOR PLAYER</td>').appendTo(row);
+                }
+                if (gamesData[i].gamePlayers.length == 1 && data.player.id != null && data.player.id != gamesData[i].gamePlayers[j].player.id) {
+                    $('<td>' + gamesData[i].gamePlayers[0].player.email + '</td><td class="yellow500">WAITING FOR PLAYER</td>').appendTo(row);
+                    joinButtonHtml = '<td class="textCenter"><button class="joinGameButton btn btn-info" data-gameid=' + '"' + gamesData[i].id + '"' + '>JOIN GAME</button></td>';
+
+                }
+                if (gamesData[i].gamePlayers[j].player.id == data.player.id) {
+                    gpid = gamesData[i].gamePlayers[j].id;
+                    isLoggedPlayer = true;
+                }
+            }
+
+            if (isLoggedPlayer === true) {
+                var gameUrl = "/web/game.html?gp=" + gpid;
+                $('<td class="textCenter"><a href=' + '"' + gameUrl + '"' + 'class="btn btn-warning" role="button">ENTER GAME</a></td>').appendTo(row);
+            } else if (joinButtonHtml !== null){
+                $(joinButtonHtml).appendTo(row);
+            } else {
+                $('<td class="textCenter">-</td>').appendTo(row);
+        }
+
+
+
+        }
+    $('.joinGameButton').click(function (e) {
+        e.preventDefault();
+
+        var joinGameUrl = "/api/game/" + $(this).data('gameid') + "/players";
+        $.post(joinGameUrl)
+            .done(function (data) {
+                console.log(data);
+                console.log("game joined");
+                gameViewUrl = "/web/game.html?gp=" + data.gpid;
+                $('#gameJoinedSuccess').show("slow").delay(2000).hide("slow");
+                setTimeout(
+                   function()
+                  {
+                       location.href = gameViewUrl;
+                   }, 3000);
+            })
+            .fail(function (data) {
+                console.log("game join failed");
+                $('#errorSignup').text(data.responseJSON.error);
+                $('#errorSignup').show("slow").delay(4000).hide("slow");
+
+            })
+            .always(function () {
+
+            });
+    });
+}
+
+
+
 function crearTabla(){
+
     $.get("/api/games")
         .done(function(data){
             data.games.sort();
-
+            console.log("crear tabla"+data);
             gameTabla(data);
          } );
 }
 
 function gameTabla(data){
 
-    console.log(data);
+    console.log("gametabla"+data);
     let tgameFormateada = addTableGameHTML(data);
     let tGames = document.getElementById("gamesInfo");
     tGames.innerHTML = tgameFormateada;
@@ -65,6 +190,16 @@ function addTableHTML(data) {
     });
     return tabla;
 }
+function newGame(data) {
+ event.preventDefault();
+    url = '/api/games';
+    $.post(url)
+        .done(function () {
+            //return location.href = "/web/game.html?gp=" + data.gpId;
+            var gameViewUrl ="/web/game.html?gp="+ data.gpId;
+        })
+}
+
 
 function logIn() {
     event.preventDefault();
@@ -81,7 +216,8 @@ function logIn() {
         })
         .fail(function () {
             console.log("Failed to LogIn");
-            alert("User not registered")
+            //alert("User not registered")
+            alert("Usuario no Registrado")
         });
 }
 
@@ -93,7 +229,8 @@ function signUp() {
             password: $("#password").val()
         })
         .done(function () {
-            console.log("data");
+
+
             logIn();
             $("#login-form").hide(),
                 $("#logout-form").show(),
@@ -120,18 +257,12 @@ function logout() {
 };
 
 
-function newGame(data) {
-console.log(data);
-    event.preventDefault();
-    url = '/api/games';
-    $.post(url)
-        .done(function (data) {
-            return location.href = "/web/game.html?gp=" + data.gpId;
-            //var gameViewUrl ="/web/game.html?gp="+ data.gpId;
-        })
-}
-/*
-function newGame(){
+
+
+
+
+
+/*function newGame(){
   console.log("creando juego");
     $.post("/api/games")
         .done(function(data){

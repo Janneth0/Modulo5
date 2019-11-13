@@ -32,6 +32,9 @@ public class SalvoController {
     @Autowired
     private PlayerRepository playerRepository;
 
+    @Autowired
+    private ShipRepository shipRepository;
+
     @RequestMapping("/games")
     public Map<String,Object> getGames(Authentication authentication) {
         Map<String, Object> dto = new LinkedHashMap<String, Object>();
@@ -80,9 +83,21 @@ public class SalvoController {
         if(isGuest(authentication)){
             return new ResponseEntity<>(makeMap("ERRO PASO ALGO"))
     }*/
+    @RequestMapping(path = "/players", method = RequestMethod.POST)
+    public ResponseEntity<Object> register(
+            @RequestParam String username, @RequestParam String password) {
 
+        if (username.isEmpty() || password.isEmpty()) {
+            return new ResponseEntity<>("Missing data", HttpStatus.FORBIDDEN);
+        }
+        if (playerRepository.findByUserName(username).orElse(null) !=  null) {
+            return new ResponseEntity<>("Name already in use", HttpStatus.FORBIDDEN);
+        }
+        playerRepository.save(new Player(username, passwordEncoder.encode(password)));
+        return new ResponseEntity<>(HttpStatus.CREATED);
+    }
 
-    @RequestMapping(value = "/players", method = RequestMethod.POST)
+    /*@RequestMapping(value = "/players", method = RequestMethod.POST)
     public ResponseEntity<Object> register(@RequestParam String username, @RequestParam String password) {
 
         if (username.isEmpty() || password.isEmpty()) {
@@ -95,11 +110,37 @@ public class SalvoController {
 
         playerRepository.save(new Player(username,passwordEncoder.encode(password)));
         return new ResponseEntity<>(makeMap("OK","Player registrado"),HttpStatus.CREATED);
+    }*/
+
+    @RequestMapping(path = "/games/players/{gpid}/ships",  method = RequestMethod.POST)
+    public ResponseEntity<Map>  addShip(@PathVariable long gpid, @RequestBody Set<Ship> ships, Authentication authentication){
+        if(isGuest(authentication)){
+            return new ResponseEntity<>(makeMap("error","NO esta autorizado"), HttpStatus.UNAUTHORIZED);
+        }
+        Player  player  = playerRepository.findByUserName(authentication.getName()).orElse(null);
+        GamePlayer  gamePlayer  = gamePlayerRepository.getOne(gpid);
+        if(player ==  null){
+            return new ResponseEntity<>(makeMap("error","NO esta autorizado"), HttpStatus.UNAUTHORIZED);
+        }
+        if(gamePlayer == null){
+            return new ResponseEntity<>(makeMap("error","NO esta autorizado"), HttpStatus.UNAUTHORIZED);
+        }
+        if(gamePlayer.getPlayer().getId() !=  player.getId()){
+            return new ResponseEntity<>(makeMap("error","Los players no coinciden"), HttpStatus.FORBIDDEN);
+        }
+        if(!gamePlayer.getShips().isEmpty()){
+            return new ResponseEntity<>(makeMap("error","NO esta autorizado ya tengo ships"), HttpStatus.UNAUTHORIZED);
+        }
+        ships.forEach(ship -> {
+            ship.setGamePlayer(gamePlayer);
+            shipRepository.save(ship);
+        });
+        return new ResponseEntity<>(makeMap("OK","Ship created"), HttpStatus.CREATED);
     }
 
 
 
-    @RequestMapping("/game_view/{nn}")
+    /*@RequestMapping("/game_view/{nn}")
     public ResponseEntity<Map<String, Object>> getGameViewByGamePlayerID(@PathVariable Long nn, Authentication  authentication) {
 
         if(isGuest(authentication)){
@@ -139,13 +180,6 @@ public class SalvoController {
                             .map(salvo -> salvo.makeSalvoDTO())
                             .collect(Collectors.toList()));
         return  new ResponseEntity<>(dto,HttpStatus.OK);
-
-
-
-    }
-/*
-    @RequestMapping(path = "/game/{gameID}/players", method = RequestMethod.POST)
-    public ResponseEntity<Map<String, Object>> joinGame(@PathVariable Long gameID, Authentication authentication) {
         if (isGuest(authentication)){
             return new ResponseEntity<>(makeMap("error", "You can't join a Game if You're Not Logged In!"), HttpStatus.UNAUTHORIZED);
         }

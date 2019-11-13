@@ -81,7 +81,8 @@ function logIn() {
         })
         .fail(function () {
             console.log("Failed to LogIn");
-            alert("User not registered")
+            //alert("User not registered")
+            alert("Usuario no Registrado")
         });
 }
 
@@ -93,7 +94,8 @@ function signUp() {
             password: $("#password").val()
         })
         .done(function () {
-            console.log("data");
+
+
             logIn();
             $("#login-form").hide(),
                 $("#logout-form").show(),
@@ -120,7 +122,17 @@ function logout() {
 };
 
 
-function createGame(){
+function newGame(data) {
+ event.preventDefault();
+    url = '/api/games';
+    $.post(url)
+        .done(function () {
+            //return location.href = "/web/game.html?gp=" + data.gpId;
+            var gameViewUrl ="/web/game.html?gp="+ data.gpId;
+        })
+}
+/*
+function newGame(){
   console.log("creando juego");
     $.post("/api/games")
         .done(function(data){
@@ -133,7 +145,7 @@ function createGame(){
         .fail(function(data){
             console.log("game creation failed");
         });
-}
+}*/
 
 
 
