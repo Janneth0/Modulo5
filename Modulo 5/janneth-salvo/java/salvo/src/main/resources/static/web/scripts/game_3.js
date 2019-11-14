@@ -1,29 +1,6 @@
 crearTabla();
 leaderboard();
-updateView();
 
-function fetchJson(url) {
-        return fetch(url, {
-            method: 'GET',
-            credentials: 'include'
-        }).then(function (response) {
-            if (response.ok) {
-                return response.json();
-            }
-            throw new Error(response.statusText);
-        });
-}
-
-function updateJson() {
-        fetchJson('/api/games').then(function (json) {
-            // do something with the JSON
-            data = json;
-            gamesData = data.games;
-            updateView();
-        }).catch(function (error) {
-            // do something getting JSON fails
-        });
-}
 
 
 function leaderboard() {
@@ -39,104 +16,6 @@ function leaderboard() {
             scoreTable(data);
         });
 }
-
-function updateView() {
-        showGamesTable(gamesData);
-        addScoresToPlayersArray(getPlayers(gamesData));
-        showScoreBoard(playersArray);
-        if (data.player == "Guest") {
-            $('#currentPlayer').text(data.player);
-            $('#logout-form').hide("slow");
-            $('#login-form').show("slow");
-            $("#createGameForm").hide();
-
-        } else {
-
-            $('#currentPlayer').text(data.player.email);
-            $('#login-form').hide("slow");
-            $('#logout-form').show("slow");
-
-        }
-}
-
-function showGamesTable(data) {
-        // let mytable = $('<table></table>').attr({id: "gamesTable", class: ""});
-        var table = "#gamesList tbody";
-        var gpid;
-        $(table).empty();
-        for (var i = 0; i < data.length; i++) {
-
-            var isLoggedPlayer = false;
-            var joinButtonHtml = null;
-
-            var DateCreated = new Date(gamesData[i].created);
-            DateCreated = DateCreated.getMonth() + 1 + "/" + DateCreated.getDate() + " " + DateCreated.getHours() + ":" + DateCreated.getMinutes();
-            var row = $('<tr></tr>').prependTo(table);
-            $('<td class="textCenter">' + gamesData[i].id + '</td>').appendTo(row);
-            $('<td>' + DateCreated + '</td>').appendTo(row);
-
-
-            for (var j = 0; j < gamesData[i].gamePlayers.length; j++) {
-
-
-                if (gamesData[i].gamePlayers.length == 2) {
-                    $('<td>' + gamesData[i].gamePlayers[j].player.email + '</td>').appendTo(row);
-                }
-                if (gamesData[i].gamePlayers.length == 1 && (data.player == "Guest" || data.player.id == gamesData[i].gamePlayers[j].player.id)) {
-                    $('<td>' + gamesData[i].gamePlayers[0].player.email + '</td><td class="yellow500">WAITING FOR PLAYER</td>').appendTo(row);
-                }
-                if (gamesData[i].gamePlayers.length == 1 && data.player.id != null && data.player.id != gamesData[i].gamePlayers[j].player.id) {
-                    $('<td>' + gamesData[i].gamePlayers[0].player.email + '</td><td class="yellow500">WAITING FOR PLAYER</td>').appendTo(row);
-                    joinButtonHtml = '<td class="textCenter"><button class="joinGameButton btn btn-info" data-gameid=' + '"' + gamesData[i].id + '"' + '>JOIN GAME</button></td>';
-
-                }
-                if (gamesData[i].gamePlayers[j].player.id == data.player.id) {
-                    gpid = gamesData[i].gamePlayers[j].id;
-                    isLoggedPlayer = true;
-                }
-            }
-
-            if (isLoggedPlayer === true) {
-                var gameUrl = "/web/game.html?gp=" + gpid;
-                $('<td class="textCenter"><a href=' + '"' + gameUrl + '"' + 'class="btn btn-warning" role="button">ENTER GAME</a></td>').appendTo(row);
-            } else if (joinButtonHtml !== null){
-                $(joinButtonHtml).appendTo(row);
-            } else {
-                $('<td class="textCenter">-</td>').appendTo(row);
-        }
-
-
-
-        }
-    $('.joinGameButton').click(function (e) {
-        e.preventDefault();
-
-        var joinGameUrl = "/api/game/" + $(this).data('gameid') + "/players";
-        $.post(joinGameUrl)
-            .done(function (data) {
-                console.log(data);
-                console.log("game joined");
-                gameViewUrl = "/web/game.html?gp=" + data.gpid;
-                $('#gameJoinedSuccess').show("slow").delay(2000).hide("slow");
-                setTimeout(
-                   function()
-                  {
-                       location.href = gameViewUrl;
-                   }, 3000);
-            })
-            .fail(function (data) {
-                console.log("game join failed");
-                $('#errorSignup').text(data.responseJSON.error);
-                $('#errorSignup').show("slow").delay(4000).hide("slow");
-
-            })
-            .always(function () {
-
-            });
-    });
-}
-
-
 
 function crearTabla(){
 
@@ -201,6 +80,7 @@ function newGame(data) {
 }
 
 
+
 function logIn() {
     event.preventDefault();
 
@@ -255,6 +135,132 @@ function logout() {
             console.log("Failed to LogOut")
         });
 };
+
+
+///////////////////
+
+function showTableGames() {
+    fetch('/api/games')
+        .then(function (response) {
+            return response.json();
+        })
+        .then(function (data) {
+            if (data.player == "guest") {
+                $("#login-form").show();
+                $("#logout-form").hide();
+                $("#newGame-form").hide();
+            } else {
+                $("#Hello").append("Welcome, " + data.player.email + "!");
+                $("#login-form").hide();
+                $("#logout-form").show();
+                $("#newGame-form").show();
+
+            }
+            $('#gameList').empty();
+            if (data.player != "guest") {
+                for (let index = 0; index < data.games.length; index++) {
+                    if (data.games[index].gamePlayers.length == 1) {
+                        console.log("tiene un solo jugador");
+                        if (data.games[index].gamePlayers[0].player.email != data.player.email) {
+                            console.log("no es el jugador logeado y se puede unir a un juego: ");
+                            console.log(data);
+                            $("#gameList").append('<tr>' + '<td>' + "Game: " + data.games[index].id + '</td>' + '<td>' + "Created " + new Date(data.games[index].created).toLocaleString() + '</td>' + '<td>' + "Player 1: " + data.games[index].gamePlayers[0].player.email + '</td>' + '<td>' + "Player 2 waiting..." + '<td><form class="text-center"><button onclick="join(' + data.games[index].id + ')">Join</button></form>' + '</td>' + '</tr>');
+
+                        } else {
+                            console.log("es el jugador logeado y no se puede unir a un juego de un jugador: " + data);
+                            $("#gameList").append('<tr>' + '<td>' + "Game: " + data.games[index].id + '</td>' + '<td>' + "Created " + new Date(data.games[index].created).toLocaleString() + '</td>' + '<td>' + "Player 1: " + data.games[index].gamePlayers[0].player.email + '</td>' + '<td>' + "Player 2 waiting..." + '</tr>');
+                        }
+                    } else if (data.games[index].gamePlayers.length == 2) {
+                        console.log(data.player.email)
+                        if (data.games[index].gamePlayers[0].player.email == data.player.email || data.games[index].gamePlayers[1].player.email == data.player.email) {
+                            $("#gameList").append('<tr>' + '<td>' + "Game: " + data.games[index].id + '</td>' + '<td>' + "Created " + new Date(data.games[index].created).toLocaleString() + '</td>' + '<td>' + "Player 1: " + data.games[index].gamePlayers[0].player.email + '</td>' + '<td>' + "Player 2: " + data.games[index].gamePlayers[1].player.email + '</td>' + '<td><form class="text-center"><button onclick="reJoin(' + data.games[index].gamePlayers.map(gp=>{console.log(gp);if(gp.player.email==data.player.email){console.log(gp.id);return gp.gpId}else{return}}) + ')">Rejoin</button></form>' + '</td>' + '</tr>');
+                        } else {
+                            $("#gameList").append('<tr>' + '<td>' + "Game: " + data.games[index].id + '</td>' + '<td>' + "Created " + new Date(data.games[index].created).toLocaleString() + '</td>' + '<td>' + "Player 1: " + data.games[index].gamePlayers[0].player.email + '</td>' + '<td>' + "Player 2: " + data.games[index].gamePlayers[1].player.email + '</td>' + '</tr>');
+                        }
+                    }
+                }
+            }
+        })
+}
+
+function logIn() {
+    event.preventDefault();
+
+    $.post("/api/login", {
+            username: $("#username").val(),
+            password: $("#password").val()
+        })
+        .done(function () {
+            showTableGames();
+            $("#login-form").hide(),
+                $("#logout-form").show(),
+                $("#password").val("")
+        })
+        .fail(function () {
+            console.log("Failed to LogIn");
+            alert("User not registered")
+        });
+}
+
+function signUp() {
+    event.preventDefault();
+
+    $.post("/api/players", {
+            username: $("#username").val(),
+            password: $("#password").val()
+        })
+        .done(function () {
+            console.log("data");
+            logIn();
+            $("#login-form").hide(),
+                $("#logout-form").show(),
+                $("#password").val("")
+        })
+        .fail(function () {
+            console.log("Failed to LogIn");
+            alert("User not registered")
+        });
+};
+
+function logout() {
+    event.preventDefault();
+
+    $.post("/api/logout")
+        .done(function () {
+            console.log("bye");
+            $("#logout-form").hide();
+            $("#login-form").show()
+        })
+        .fail(function () {
+            console.log("Failed to LogOut")
+        });
+};
+
+function newGame() {
+    event.preventDefault();
+    url = '/api/games/';
+    $.post(url)
+        .done(function (data) {
+            return location.href = "/web/game.html?gp=" + data.gpid;
+        })
+}
+
+function join(gameId) {
+    event.preventDefault();
+    url = '/api/games/' + gameId + '/players';
+    $.post(url)
+        .done(function (data) {
+            return location.href = "/web/game.html?gp=" + data.gpid;
+        })
+}
+
+function reJoin(gpId) {
+    event.preventDefault();
+    location.href = "/web/game.html?gp=" + gpId;
+}
+
+
+
 
 
 

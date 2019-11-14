@@ -29,6 +29,7 @@ public class Game {
     public Game(Date creationDate) {
         this.creationDate = creationDate;
     }
+//get && set
 
     public long getId() {
         return id;
@@ -48,6 +49,14 @@ public class Game {
 
     public void setGamePlayers(Set<GamePlayer> gamePlayers) {
         this.gamePlayers = gamePlayers;
+    }
+
+    public Set<Score> getScores() {
+        return scores;
+    }
+
+    public void setScores(Set<Score> scores) {
+        this.scores = scores;
     }
 
     public Map<String,Object> makeGameDTO(Game game){
