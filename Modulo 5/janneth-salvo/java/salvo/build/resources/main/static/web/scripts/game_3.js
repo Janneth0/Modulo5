@@ -22,7 +22,7 @@ function gameTabla(data){
     let tGames = document.getElementById("gamesInfo");
     tGames.innerHTML = tgameFormateada;
 }
-function addTableGameHTML(data){
+/*function addTableGameHTML(data){
     var Gtabla = '<thead class="thead-dark"><tr><th> Game ID</th><th>Fecha</th><th>Player1</th><th>Player2</th><th>State</th> ';
     Gtabla += "<tbody>";
     data.games.forEach(function(game){
@@ -31,7 +31,30 @@ function addTableGameHTML(data){
     Gtabla += "<td>" +   new Date(game.created).toLocaleString()+ "</td>";
     Gtabla += "<td>" + game.gamePlayers[0].player.email + "</td>";
     Gtabla += "<td>" + (game.gamePlayers.length == 1 ? "      ":game.gamePlayers[1].player.email) + "</td>";
-    Gtabla += "<td></td>";
+    if(game.gamePlayers.length == 1 && game.gamePlayers[0].player.id!=data.player.id){
+    Gtabla += "<td class='textCenter' ><button class='joinGameButton' data.gameid=' " + game.id +" ' >unirse</button ></td>";
+    };
+    return Gtabla;
+})
+}*/
+function addTableGameHTML(data){
+
+    var Gtabla = '<thead class="thead-dark"><tr><th> Game ID</th><th>Fecha</th><th>Player1</th><th>Player2</th><th>State</th> ';
+    Gtabla += "<tbody>";
+    data.games.forEach(function(game){
+    Gtabla += "<tr>";
+    Gtabla += "<td>" + game.id + "</td>";
+    Gtabla += "<td>" +   new Date(game.created).toLocaleString()+ "</td>";
+    Gtabla += "<td>" + game.gamePlayers[0].player.email + "</td>";
+    Gtabla += "<td>" + (game.gamePlayers.length == 1 ? "      ":game.gamePlayers[1].player.email) + "</td>";
+    if(game)
+
+
+
+     if(game.gamePlayers.length == 1 && game.gamePlayers[0].player.id!=data.player.id){
+        Gtabla += "<td class='textCenter' ><button class='joinGameButton' data.gameid=' " + game.id +" ' >unirse</button ></td>";
+        };
+    Gtabla += "<td>hola</td>";
     });
     return Gtabla;
 }
@@ -55,7 +78,6 @@ function addTableHTML(data) {
     });
     return tabla;
 }
-
 function newGame() {
  event.preventDefault();
     url = '/api/games';
@@ -66,7 +88,6 @@ function newGame() {
             //var gameViewUrl ="/web/game.html?gp="+ data.gpId;
         })
 }
-
 function logIn() {
     event.preventDefault();
     $.post("/api/login", {

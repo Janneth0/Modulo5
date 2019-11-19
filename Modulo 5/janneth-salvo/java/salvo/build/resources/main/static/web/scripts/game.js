@@ -14,10 +14,12 @@ function loadData(){
             if(data.gamePlayers.length==2){
                  if(data.gamePlayers[0].id == getParameterByName("gp")){
                  playerInfo = [data.gamePlayers[0].player.email,data.gamePlayers[1].player.email];
+                 console.log(playerInfo);
+                 $("#playerInfo").text(playerInfo[0] + '(you) vs ' + playerInfo[1]);
                  }
                  else{
                  playerInfo = [data.gamePlayers[1].player.email,data.gamePlayers[0].player.email];
-                 $('#playerInfo').text(playerInfo[0].player.email + '(you) vs ' + playerInfo[1].player.email);
+                 $('#playerInfo').text(playerInfo[0]+ '(you) vs ' + playerInfo[1]);
                  }
             }
             else if(data.gamePlayers.length==1){
