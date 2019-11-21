@@ -26,10 +26,17 @@ public class Player {
 
     public Player() {
     }
-
     public Player(String userName, String password) {
         this.userName = userName;
         this.password = password;
+    }
+
+    public Map<String,Object> makePlayerDTO(){
+        Map<String,Object> dto=new LinkedHashMap<String, Object>();
+        dto.put("id",this.getId());
+        dto.put("email",this.getUserName());
+
+        return dto;
     }
 
     public long getId() {
@@ -67,16 +74,6 @@ public class Player {
     public void setPassword(String password) {
         this.password = password;
     }
-
-    public Map<String,Object> makePlayerDTO(){
-        Map<String,Object> dto=new LinkedHashMap<String, Object>();
-        dto.put("id",this.getId());
-        dto.put("email",this.getUserName());
-
-        return dto;
-    }
-
-
 
     public float getWins(Set<Score> puntajes){
         return puntajes.stream().filter(puntaje -> puntaje.getScore() == 1).count();

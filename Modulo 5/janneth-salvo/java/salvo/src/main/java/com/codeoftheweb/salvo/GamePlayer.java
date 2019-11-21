@@ -35,6 +35,15 @@ public class GamePlayer {
         this.game = game;
         this.player = player;
     }
+
+    public Object makeGamePlayerDTO() {
+        Map<String,Object> dto=new LinkedHashMap<>();
+        dto.put("id",this.getId());
+        dto.put("player",this.getPlayer().makePlayerDTO());
+        return dto;
+
+    }
+
     public long getId() {
         return id;
     }
@@ -68,15 +77,6 @@ public class GamePlayer {
     @JsonIgnore
     public Set<Salvo> getSalvoes() { return salvoes;  }
     public void setSalvoes(Set<Salvo> salvoes) { this.salvoes = salvoes;  }
-
-    public Object makeGamePlayerDTO() {
-        Map<String,Object> dto=new LinkedHashMap<>();
-        dto.put("id",this.getId());
-        dto.put("player",this.getPlayer().makePlayerDTO());
-        return dto;
-
-    }
-
 
 }
 

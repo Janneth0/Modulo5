@@ -2,30 +2,41 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="bfc26202-6842-40e2-8b72-f1b3d867d365" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/codeoftheweb/salvo/GameController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/codeoftheweb/salvo/ShipController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/executionHistory/executionHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/executionHistory/executionHistory.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/fileContent/fileContent.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/fileContent/fileContent.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/fileHashes/fileHashes.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/fileHashes/fileHashes.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/javaCompile/classAnalysis.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/javaCompile/classAnalysis.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/javaCompile/javaCompile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/javaCompile/javaCompile.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/javaCompile/taskHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/javaCompile/taskHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/codeoftheweb/salvo/Game.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/codeoftheweb/salvo/Game.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/codeoftheweb/salvo/GamePlayer.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/codeoftheweb/salvo/GamePlayer.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/codeoftheweb/salvo/Player.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/codeoftheweb/salvo/Player.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/codeoftheweb/salvo/PlayerController.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/codeoftheweb/salvo/PlayerController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/codeoftheweb/salvo/Salvo.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/codeoftheweb/salvo/Salvo.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/codeoftheweb/salvo/SalvoApplication.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/codeoftheweb/salvo/SalvoApplication.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/codeoftheweb/salvo/SalvoController.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/codeoftheweb/salvo/SalvoController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/codeoftheweb/salvo/Score.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/codeoftheweb/salvo/Score.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/codeoftheweb/salvo/Ship.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/codeoftheweb/salvo/Ship.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/codeoftheweb/salvo/WebSecurityConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/codeoftheweb/salvo/WebSecurityConfig.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/codeoftheweb/salvo/WebSecurityConfiguration.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/codeoftheweb/salvo/WebSecurityConfiguration.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/resources/main/static/web/games.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/resources/main/static/web/games.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/resources/main/static/web/scripts/bootstrap.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/build/resources/main/static/web/scripts/bootstrap.min.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/resources/main/static/web/scripts/game_3.js" beforeDir="false" afterPath="$PROJECT_DIR$/build/resources/main/static/web/scripts/game_3.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/web/games.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/web/games.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/web/scripts/bootstrap.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/web/scripts/bootstrap.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/codeoftheweb/salvo/Game.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/codeoftheweb/salvo/Game.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/codeoftheweb/salvo/GamePlayer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/codeoftheweb/salvo/GamePlayer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/codeoftheweb/salvo/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/codeoftheweb/salvo/Player.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/codeoftheweb/salvo/PlayerController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/codeoftheweb/salvo/PlayerController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/codeoftheweb/salvo/Salvo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/codeoftheweb/salvo/Salvo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/codeoftheweb/salvo/SalvoController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/codeoftheweb/salvo/SalvoController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/codeoftheweb/salvo/Score.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/codeoftheweb/salvo/Score.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/codeoftheweb/salvo/Ship.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/codeoftheweb/salvo/Ship.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/static/web/scripts/game_3.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/web/scripts/game_3.js" afterDir="false" />
     </list>
-    <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -68,133 +79,20 @@
       </state>
     </system>
   </component>
-  <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/static/web/games.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="494">
-              <caret line="26" column="7" selection-start-line="26" selection-start-column="7" selection-end-line="26" selection-end-column="7" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/static/web/scripts/game_3.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="139">
-              <caret line="60" column="77" selection-start-line="60" selection-start-column="77" selection-end-line="60" selection-end-column="77" />
-              <folding>
-                <element signature="e#0#7931#0" />
-                <element signature="e#0#7931#0" />
-                <element signature="e#0#7931#0" />
-                <element signature="e#0#7931#0" />
-                <element signature="e#0#7931#0" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../../.." />
   </component>
-  <component name="IdeDocumentHistory">
-    <option name="CHANGED_PATHS">
-      <list>
-        <option value="$PROJECT_DIR$/src/main/resources/static/web/games.html" />
-        <option value="$PROJECT_DIR$/src/main/resources/static/web/scripts/gridstack.jQueryUI1.js" />
-        <option value="$PROJECT_DIR$/src/main/resources/static/web/scripts/gridstack.jQueryUI.js" />
-        <option value="$PROJECT_DIR$/src/main/resources/static/web/scripts/gridstack1.js" />
-        <option value="$PROJECT_DIR$/src/main/resources/static/web/scripts/gridstack.js" />
-        <option value="$PROJECT_DIR$/src/main/resources/static/web/scripts/interact.min1_331.js" />
-        <option value="$PROJECT_DIR$/src/main/resources/static/web/scripts/interact.min1_33.js" />
-        <option value="$PROJECT_DIR$/src/main/resources/static/web/scripts/interact1.js" />
-        <option value="$PROJECT_DIR$/src/main/resources/static/web/scripts/interact.js" />
-        <option value="$PROJECT_DIR$/src/main/resources/static/web/scripts/game_3.js" />
-      </list>
-    </option>
-  </component>
-  <component name="MavenProjectNavigator">
-    <treeState>
-      <expand />
-      <select />
-    </treeState>
-  </component>
-  <component name="ProjectFrameBounds" extendedState="7">
-    <option name="x" value="-8" />
-    <option name="y" value="-8" />
-    <option name="width" value="564" />
-    <option name="height" value="688" />
-  </component>
+  <component name="ProjectId" id="1Tveu83ZH1Bq12sgZGcdbGTbSVK" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
-  <component name="ProjectView">
-    <navigator proportions="" version="1">
-      <foldersAlwaysOnTop value="true" />
-    </navigator>
-    <panes>
-      <pane id="Scope" />
-      <pane id="ProjectPane">
-        <subPane>
-          <expand>
-            <path>
-              <item name="salvo" type="b2602c69:ProjectViewProjectNode" />
-              <item name="salvo" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-            </path>
-            <path>
-              <item name="salvo" type="b2602c69:ProjectViewProjectNode" />
-              <item name="salvo" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="salvo" type="b2602c69:ProjectViewProjectNode" />
-              <item name="salvo" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-            </path>
-            <path>
-              <item name="salvo" type="b2602c69:ProjectViewProjectNode" />
-              <item name="salvo" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="salvo" type="b2602c69:ProjectViewProjectNode" />
-              <item name="salvo" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="static" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="salvo" type="b2602c69:ProjectViewProjectNode" />
-              <item name="salvo" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="static" type="462c0819:PsiDirectoryNode" />
-              <item name="web" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="salvo" type="b2602c69:ProjectViewProjectNode" />
-              <item name="salvo" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="static" type="462c0819:PsiDirectoryNode" />
-              <item name="web" type="462c0819:PsiDirectoryNode" />
-              <item name="scripts" type="462c0819:PsiDirectoryNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
-      <pane id="PackagesPane" />
-    </panes>
-  </component>
   <component name="PropertiesComponent">
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1574209899009" />
   </component>
   <component name="RunDashboard">
@@ -248,151 +146,20 @@
     </task>
     <servers />
   </component>
-  <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
-    <editor active="true" />
-    <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.18532526" />
-      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info id="Image Layers" order="2" />
-      <window_info id="Designer" order="3" />
-      <window_info id="Capture Tool" order="4" />
-      <window_info id="UI Designer" order="5" />
-      <window_info id="Favorites" order="6" side_tool="true" />
-      <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.29623568" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Terminal" order="7" />
-      <window_info anchor="bottom" id="Event Log" order="8" side_tool="true" />
-      <window_info anchor="bottom" id="Version Control" order="9" />
-      <window_info anchor="bottom" id="Build" order="10" weight="0.3289689" />
-      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.24962178" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" id="Palette" order="3" />
-      <window_info anchor="right" id="Gradle" order="4" weight="0.32980332" />
-      <window_info anchor="right" id="Theme Preview" order="5" />
-      <window_info anchor="right" id="Capture Analysis" order="6" />
-      <window_info anchor="right" id="Palette&#9;" order="7" />
-      <window_info anchor="right" id="Maven" order="8" weight="0.32980332" />
-    </layout>
-    <layout-to-restore>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.39183056" />
-      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info id="Image Layers" order="2" />
-      <window_info id="Designer" order="3" />
-      <window_info id="Capture Tool" order="4" />
-      <window_info id="UI Designer" order="5" />
-      <window_info id="Favorites" order="6" side_tool="true" />
-      <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.13584287" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Terminal" order="7" />
-      <window_info anchor="bottom" id="Event Log" order="8" side_tool="true" />
-      <window_info anchor="bottom" id="Version Control" order="9" />
-      <window_info anchor="bottom" id="Build" order="10" weight="0.3289689" />
-      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.24962178" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" id="Palette" order="3" />
-      <window_info anchor="right" id="Maven" order="4" />
-      <window_info anchor="right" id="Gradle" order="5" weight="0.32980332" />
-      <window_info anchor="right" id="Theme Preview" order="6" />
-      <window_info anchor="right" id="Capture Analysis" order="7" />
-      <window_info anchor="right" id="Palette&#9;" order="8" />
-    </layout-to-restore>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="antWorkspaceConfiguration">
     <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
     <option name="FILTER_TARGETS" value="false" />
-  </component>
-  <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/resources/static/web/games.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="494">
-          <caret line="26" column="7" selection-start-line="26" selection-start-column="7" selection-end-line="26" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/static/web/scripts/gridstack.jQueryUI.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="548">
-          <caret line="97" selection-start-line="97" selection-end-line="97" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/static/web/scripts/gridstack.jQueryUI1.js">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/static/web/scripts/gridstack1.js">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/static/web/scripts/gridstack.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="149">
-          <caret line="1725" column="38" selection-start-line="1725" selection-start-column="38" selection-end-line="1725" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/static/web/scripts/interactsalvo.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-106" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/static/web/scripts/modernizr-2.6.2.min1.js">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/static/web/scripts/modernizr-2.6.2.min.js">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/static/web/scripts/interact.min1_331.js">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/static/web/scripts/interact.min1_33.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="114">
-          <caret line="6" lean-forward="true" selection-start-line="6" selection-end-line="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/static/web/scripts/interact14.js">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/static/web/scripts/interact1.js">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/static/web/scripts/interact.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="548">
-          <caret line="5425" selection-start-line="5425" selection-end-line="5425" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/static/web/scripts/interact141.js">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/static/web/scripts/game_3.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="139">
-          <caret line="60" column="77" selection-start-line="60" selection-start-column="77" selection-end-line="60" selection-end-column="77" />
-          <folding>
-            <element signature="e#0#7931#0" />
-            <element signature="e#0#7931#0" />
-            <element signature="e#0#7931#0" />
-            <element signature="e#0#7931#0" />
-            <element signature="e#0#7931#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
   </component>
   <component name="masterDetails">
     <states>

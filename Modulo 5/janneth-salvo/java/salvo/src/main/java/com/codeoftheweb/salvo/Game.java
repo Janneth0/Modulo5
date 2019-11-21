@@ -7,6 +7,8 @@ import java.util.Date;
 import java.util.LinkedHashMap;
 import java.util.Map;
 import java.util.Set;
+import java.util.stream.Collector;
+import java.util.stream.Collectors;
 
 @Entity
 public class Game {
@@ -15,13 +17,26 @@ public class Game {
     @GeneratedValue(strategy = GenerationType.AUTO, generator = "native")
     @GenericGenerator(name = "native", strategy = "native")
     private long id;
-
     private Date creationDate;
+
     @OneToMany(mappedBy = "game", fetch = FetchType.EAGER)
     private Set<GamePlayer> gamePlayers;
 
     @OneToMany(mappedBy = "game", fetch = FetchType.EAGER)
     private Set<Score> scores;
+
+
+    public Map<String,Object> makeGameDTO(Game game){
+        Map<String,Object> dto=new LinkedHashMap<String, Object>();
+        dto.put("id", game.getId());
+        dto.put("created",game.getCreationDate().getTime());
+        dto.put("gamePlayers",game.getGamePlayers());
+        dto.put("score",game.getScores()
+                .stream()
+                .map(scores-> scores.makeScoreDTO())
+                .collect(Collectors.toList()));
+        return dto;
+    }
 
     public Game() {
     }
@@ -59,13 +74,6 @@ public class Game {
         this.scores = scores;
     }
 
-    public Map<String,Object> makeGameDTO(Game game){
-        Map<String,Object> dto=new LinkedHashMap<String, Object>();
-        dto.put("id", game.getId());
-        dto.put("created",game.getCreationDate().getTime());
-        dto.put("gamePlayers",game.getGamePlayers());
-        return dto;
-    }
 
 
 

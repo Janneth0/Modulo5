@@ -37,6 +37,13 @@ public class Salvo {
     this.turno = turno;
     this.locations = locations;
   }
+  public Object makeSalvoDTO() {
+    Map<String,Object> dto=new LinkedHashMap<>();
+    dto.put("turno",getTurno());
+    dto.put("player",this.getGamePlayer().getPlayer().getId());
+    dto.put("salvoLocations",getLocations());
+    return dto;
+  }
   //get and set
 
   public long getId() {
@@ -59,14 +66,5 @@ public class Salvo {
   }
   public void setLocations(Set<String> locations) {
     this.locations = locations;
-  }
-
-
-  public Object makeSalvoDTO() {
-    Map<String,Object> dto=new LinkedHashMap<>();
-    dto.put("turno",getTurno());
-    dto.put("player",this.getGamePlayer().getPlayer().getId());
-    dto.put("salvoLocations",getLocations());
-    return dto;
   }
 }

@@ -50,79 +50,28 @@ var playerLogueado = data.player.email;
     Gtabla += "<td>" + (game.gamePlayers.length == 1 ? "      ":game.gamePlayers[1].player.email) + "</td>";
 
     if(data.player =="guest"){
+    console.log(data);
     Gtabla += "<td>hola guest</td>";
     }
 
     else if(data.player.email !="guest"){
         if(game.gamePlayers.length == 1 && game.gamePlayers[0].player.id!=data.player.id){
-        Gtabla += "<td class='textCenter' ><button onclick='unir()' data.gameid=' " + game.id +" ' >unirse</button ></td>";
+        Gtabla += "<td class='textCenter' ><button onclick='unir("+'gpid'+")' data.gameid=' " + game.id +" ' >unirse</button ></td>";
         }
         if(game.gamePlayers.length == 1 && game.gamePlayers[0].player.id == data.player.id){
-        Gtabla += "<td class='textCenter' ><button onclick='entrar()' data.gameid=' " + game.id +" ' >ingresar</button ></td>";
+        Gtabla += "<td class='textCenter' ><button onclick='entrar("+'gpid'+")' data.gameid=' " + game.id +" ' >ingresar</button ></td>";
         }
-        if(game.gamePlayers.length == 2 && game.gamePlayers[0].player.id == data.player.id){
-        console.log("if dos jugadores ")
-        Gtabla += "<td class='textCenter' ><button onclick='entrar()' data.gameid=' " + game.id +" ' >ingresar</button ></td>";
+        if(game.gamePlayers.length == 2 ){
+        console.log("ingreso al if de 2 jugadores");
+            if(game.gamePlayers[0].player.id == data.player.id|| game.gamePlayers[1].player.id==data.player.id){
+            console.log("ingreso al igualr id");
+            Gtabla += "<td class='textCenter' ><button class='entrar btn btn-danger font-weight-bold' onclick='entrar("+'gpid'+")' data.gameid=' " + game.id +" ' >ingresar</button ></td>";
+            }
         }
-
     }
-
-
     });
     return Gtabla;
-    $('.joinGameButton').click(function (e) {
-            e.preventDefault();
-            var joinGameUrl = "/api/game/" + $(this).data('gameid') + "/players";
-            $.post(joinGameUrl)
-                .done(function (data) {
-                    console.log(data);
-                    console.log("game joined");
-                    gameViewUrl = "/web/game_2.html?gp=" + data.game;
-                    $('#gameJoinedSuccess').show("slow").delay(2000).hide("slow");
-                    setTimeout(
-                       function()
-                      {
-                           location.href = gameViewUrl;
-                       }, 3000);
-                })
-                .fail(function (data) {
-                    console.log("game join failed");
-                    $('#errorSignup').text(data.responseJSON.error);
-                    $('#errorSignup').show("slow").delay(4000).hide("slow");
-                })
-                .always(function () {
-                });
-        });
-
 }
-
-$('.joinGameButton').click(function (e) {
-        e.preventDefault();
-        var joinGameUrl = "/api/game/" + $(this).data('gameid') + "/players";
-        $.post(joinGameUrl)
-            .done(function (data) {
-                console.log(data);
-                console.log("game joined");
-                gameViewUrl = "/web/game_2.html?gp=" + data.game;
-                $('#gameJoinedSuccess').show("slow").delay(2000).hide("slow");
-                setTimeout(
-                   function()
-                  {
-                       location.href = gameViewUrl;
-                   }, 3000);
-            })
-            .fail(function (data) {
-                console.log("game join failed");
-                $('#errorSignup').text(data.responseJSON.error);
-                $('#errorSignup').show("slow").delay(4000).hide("slow");
-            })
-            .always(function () {
-            });
-    });
-Contraer
-
-
-
 
 
 function scoreTable(data) {
@@ -146,13 +95,11 @@ function addTableHTML(data) {
     return tabla;
 }
 function newGame() {
- event.preventDefault();
-    url = '/api/games';
+    event.preventDefault();
+    url = '/api/games/';
     $.post(url)
         .done(function (data) {
-            console.log(data);
-            return location.href = "/web/game.html?gp=" + data.gpId;
-            //var gameViewUrl ="/web/game.html?gp="+ data.gpId;
+            return location.href = "/web/game.html?gp=" + data.gpid;
         })
 }
 function logIn() {
@@ -202,39 +149,39 @@ function logout() {
             console.log("Failed to LogOut")
         });
 };
-function entrar (gPId) {
-
+ //BOTON ENTRAR A JUEGO DEL QUE FORMO PARTE
+ function entrar (data) {
    console.log("Estas dando click");
    alert("¡¡Regresaste!!");
-
-gameViewUrl = "/web/game.html?gp=" + gPId;
-
+    console.log(data.gpId);
+    return location.href = "/web/game.html?gp=" + data.gpId;
  setTimeout(
   function () {
 location.href = gameViewUrl;
    }, 1000);
 
  }
- function unir() {
+//FIN BOTON ENTRAR A JUEGO
+ /*function unir() {
     let botonUnir = document.getElementsByName("botonUnir")
     botonUnir.forEach(a => a.addEventListener("click", function () {
       alert("¡¡Gracias por sumarte!!");
-
      let gameId = this.getAttribute("data-gameId");
-
   console.log(gameId);
-
-
       $.post("/api/game/" +  gameId + "/player/")
-
         .done(function (data) {
           console.log(data);
-
           return location.href = "/web/game.html?gp=" +  data.gpid;
-
         }).fail(error => console.log(error))
     }))
-
+  }*/
+  function unir(gameId) {
+      event.preventDefault();
+      url = '/api/games/' + gameId + '/players';
+      $.post(url)
+          .done(function (data) {
+              return location.href = "/web/game.html?gp=" + data.gpid;
+          })
   }
 
 ///////////////////
