@@ -1,6 +1,7 @@
 crearTabla();
 leaderboard();
-newGame();
+//newGame();
+
 function leaderboard() {
     $.get('/api/leaderBoard')
         .done(function (data) {
@@ -39,12 +40,14 @@ function gameTabla(data){
 }*/
 function addTableGameHTML(data){
 var playerLogueado = data.player.email;
+    console.log(data);
 
     var Gtabla = '<thead class="thead-dark"><tr><th> Game ID</th><th>Fecha</th><th>Player1</th><th>Player2</th><th>State</th> ';
     Gtabla += "<tbody>";
     data.games.forEach(function(game){
     Gtabla += "<tr>";
     Gtabla += "<td>" + game.id + "</td>";
+    console.log(game);
     Gtabla += "<td>" +   new Date(game.created).toLocaleString()+ "</td>";
     Gtabla += "<td>" + game.gamePlayers[0].player.email + "</td>";
     Gtabla += "<td>" + (game.gamePlayers.length == 1 ? "      ":game.gamePlayers[1].player.email) + "</td>";
@@ -56,16 +59,17 @@ var playerLogueado = data.player.email;
 
     else if(data.player.email !="guest"){
         if(game.gamePlayers.length == 1 && game.gamePlayers[0].player.id!=data.player.id){
-        Gtabla += "<td class='textCenter' ><button onclick='unir("+'gpid'+")' data.gameid=' " + game.id +" ' >unirse</button ></td>";
+        Gtabla += "<td class='textCenter' ><button onclick='unir(" + game.id +")' data.gameid=' " + game.id +" ' >unirse</button ></td>";
         }
         if(game.gamePlayers.length == 1 && game.gamePlayers[0].player.id == data.player.id){
-        Gtabla += "<td class='textCenter' ><button onclick='entrar("+'gpid'+")' data.gameid=' " + game.id +" ' >ingresar</button ></td>";
+        Gtabla += "<td class='textCenter' ><button onclick='entrar("+game.gamePlayers[0].id+")' data.gameid=' " + game.id +" ' >ingresar</button ></td>";
         }
         if(game.gamePlayers.length == 2 ){
-        console.log("ingreso al if de 2 jugadores");
-            if(game.gamePlayers[0].player.id == data.player.id|| game.gamePlayers[1].player.id==data.player.id){
-            console.log("ingreso al igualr id");
-            Gtabla += "<td class='textCenter' ><button class='entrar btn btn-danger font-weight-bold' onclick='entrar("+'gpid'+")' data.gameid=' " + game.id +" ' >ingresar</button ></td>";
+            if(game.gamePlayers[0].player.id == data.player.id){
+              Gtabla += "<td class='textCenter' ><button class='entrar btn btn-danger font-weight-bold' onclick='entrar("+game.gamePlayers[0].id+")' data.gameid=' " + game.id +" ' >ingresar</button ></td>";
+            }
+            if(game.gamePlayers[1].player.id == data.player.id){
+              Gtabla += "<td class='textCenter' ><button class='entrar btn btn-danger font-weight-bold' onclick='entrar("+game.gamePlayers[1].id+")' data.gameid=' " + game.id +" ' >ingresar</button ></td>";
             }
         }
     }
@@ -150,11 +154,10 @@ function logout() {
         });
 };
  //BOTON ENTRAR A JUEGO DEL QUE FORMO PARTE
- function entrar (data) {
+ function entrar (gpid) {
    console.log("Estas dando click");
    alert("¡¡Regresaste!!");
-    console.log(data.gpId);
-    return location.href = "/web/game.html?gp=" + data.gpId;
+   return location.href = "/web/game.html?gp=" + gpid;
  setTimeout(
   function () {
 location.href = gameViewUrl;
@@ -175,9 +178,9 @@ location.href = gameViewUrl;
         }).fail(error => console.log(error))
     }))
   }*/
-  function unir(gameId) {
-      event.preventDefault();
-      url = '/api/games/' + gameId + '/players';
+  function unir(data) {
+          event.preventDefault();
+      url = '/api/games/' + data + '/players';
       $.post(url)
           .done(function (data) {
               return location.href = "/web/game.html?gp=" + data.gpid;
@@ -185,4 +188,3 @@ location.href = gameViewUrl;
   }
 
 ///////////////////
-
