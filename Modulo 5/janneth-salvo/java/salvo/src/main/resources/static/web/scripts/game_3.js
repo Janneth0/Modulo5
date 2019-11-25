@@ -40,23 +40,18 @@ function gameTabla(data){
 }*/
 function addTableGameHTML(data){
 var playerLogueado = data.player.email;
-    console.log(data);
-
-    var Gtabla = '<thead class="thead-dark"><tr><th> Game ID</th><th>Fecha</th><th>Player1</th><th>Player2</th><th>State</th> ';
-    Gtabla += "<tbody>";
+    //var Gtabla = '<thead class="thead-dark"><tr><th> Game ID</th><th>Fecha</th><th>Player1</th><th>Player2</th><th>State</th> ';
+    var Gtabla = "<tbody>";
     data.games.forEach(function(game){
     Gtabla += "<tr>";
     Gtabla += "<td>" + game.id + "</td>";
-    console.log(game);
     Gtabla += "<td>" +   new Date(game.created).toLocaleString()+ "</td>";
     Gtabla += "<td>" + game.gamePlayers[0].player.email + "</td>";
     Gtabla += "<td>" + (game.gamePlayers.length == 1 ? "      ":game.gamePlayers[1].player.email) + "</td>";
 
-    if(data.player =="guest"){
-    console.log(data);
+    if(data.player =="Guest"){
     Gtabla += "<td>hola guest</td>";
     }
-
     else if(data.player.email !="guest"){
         if(game.gamePlayers.length == 1 && game.gamePlayers[0].player.id!=data.player.id){
         Gtabla += "<td class='textCenter' ><button onclick='unir(" + game.id +")' data.gameid=' " + game.id +" ' >unirse</button ></td>";

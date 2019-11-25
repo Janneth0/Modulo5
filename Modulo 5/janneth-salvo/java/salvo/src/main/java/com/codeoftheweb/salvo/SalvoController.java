@@ -31,6 +31,9 @@ public class SalvoController {
     @Autowired
     private ShipRepository shipRepository;
 
+    @Autowired
+    private SalvoRepository salvoRepository;
+
     @RequestMapping("/games")
     public Map<String,Object> getGames(Authentication authentication) {
         Map<String, Object> dto = new LinkedHashMap<String, Object>();
@@ -49,6 +52,7 @@ public class SalvoController {
         return dto;
     }
 
+    //agregar jugador a game
     @RequestMapping(path = "/games", method = RequestMethod.POST)
     public ResponseEntity<Object> createGame(Authentication authentication) {
 
@@ -68,6 +72,7 @@ public class SalvoController {
         return new ResponseEntity<>(makeMap("gpid",gamePlayer.getId()),HttpStatus.CREATED);
     }
 
+    //unir jugador a game
     @RequestMapping(path = "/games/{id}/players", method = RequestMethod.POST)
     public ResponseEntity<Object> joinGame(@PathVariable Long id, Authentication authentication) {
         System.out.println("Entro al metodo :"+id);
@@ -122,7 +127,6 @@ public class SalvoController {
         return dto;
     }
 
-
     @RequestMapping(path = "/players", method = RequestMethod.POST)
     public ResponseEntity<Object> register(@RequestParam String username, @RequestParam String password) {
 
@@ -136,35 +140,7 @@ public class SalvoController {
         return new ResponseEntity<>(HttpStatus.CREATED);
     }
 
-
-    /*@RequestMapping(path = "/games/players/{gpid}/ships",  method = RequestMethod.POST)
-    public ResponseEntity<Map>  addShip(@PathVariable long gpid, @RequestBody Set<Ship> ships, Authentication authentication){
-        if(isGuest(authentication)){
-            return new ResponseEntity<>(makeMap("error","NO esta autorizado"), HttpStatus.UNAUTHORIZED);
-        }
-        Player  player  = playerRepository.findByUserName(authentication.getName()).orElse(null);
-        GamePlayer  gamePlayer  = gamePlayerRepository.getOne(gpid);
-        if(player ==  null){
-            return new ResponseEntity<>(makeMap("error","NO esta autorizado"), HttpStatus.UNAUTHORIZED);
-        }
-        if(gamePlayer == null){
-            return new ResponseEntity<>(makeMap("error","NO esta autorizado"), HttpStatus.UNAUTHORIZED);
-        }
-        if(gamePlayer.getPlayer().getId() !=  player.getId()){
-            return new ResponseEntity<>(makeMap("error","Los players no coinciden"), HttpStatus.FORBIDDEN);
-        }
-        if(!gamePlayer.getShips().isEmpty()){
-            return new ResponseEntity<>(makeMap("error","NO esta autorizado ya tengo ships"), HttpStatus.UNAUTHORIZED);
-        }
-        ships.forEach(ship -> {
-            ship.setGamePlayer(gamePlayer);
-            shipRepository.save(ship);
-        });
-        return new ResponseEntity<>(makeMap("OK","Ship created"), HttpStatus.CREATED);
-    }
-*/
-
-
+    //verifica que el usuario y el juego existan y que el jugador pertenezca al juego
     @RequestMapping("/game_view/{nn}")
     public ResponseEntity<Map<String, Object>> getGameViewByGamePlayerID(@PathVariable Long nn, Authentication  authentication) {
 
@@ -187,8 +163,6 @@ public class SalvoController {
             return new  ResponseEntity<>(makeMap("error","Paso algo"),HttpStatus.CONFLICT);
         }
 
-
-
         Map<String, Object> dto=new LinkedHashMap<>();
         dto.put("id", gamePlayer.getGame().getId());
         dto.put("created", gamePlayer.getGame().getCreationDate());
@@ -208,7 +182,56 @@ public class SalvoController {
         return new ResponseEntity<>(dto, HttpStatus.ACCEPTED);
     }
 
+    //Agregar Salvos//
+    @RequestMapping(value = "/games/players/{gpid}/salvoes",  method = RequestMethod.POST)
+    public ResponseEntity<Map> addSalvo(@PathVariable long gpid,
+                                        @RequestBody Salvo  salvo,
+                                        Authentication authentication){
 
+        if(isGuest(authentication)){
+            return new ResponseEntity<>(makeMap("error","NO esta autorizado"), HttpStatus.UNAUTHORIZED);
+        }
+
+        Player player  = playerRepository.findByUserName(authentication.getName()).orElse(null);
+        GamePlayer self  = gamePlayerRepository.findById(gpid).orElse(null);
+
+        if(self == null){
+            return new ResponseEntity<>(makeMap("error","No existe el game player"), HttpStatus.UNAUTHORIZED);
+        }
+
+        if(self.getPlayer().getId() !=  player.getId()){
+            return new ResponseEntity<>(makeMap("error","Los players no coinciden"), HttpStatus.FORBIDDEN);
+        }
+
+        if (self.getShips().isEmpty()) {
+            return new ResponseEntity<>(makeMap("error", "No está autorizado, tienes que registrar tus ships"), HttpStatus.UNAUTHORIZED);
+        }
+
+        //Verificar si ya disparó en este turno o no , sino lo creé me guarda el salvo nuevo, sino no me deja disparar.
+
+        if(!turnHasSalvoes (salvo,self.getSalvoes())){
+            salvo.setTurno(self.getSalvoes().size() +1);
+            salvo.setGamePlayer(self);
+            salvoRepository.save(salvo);
+            return new ResponseEntity<>(makeMap("ok", "Salvos agregados"),HttpStatus.CREATED);
+        }
+        return new ResponseEntity<>(makeMap("error", "No puedes disparar en este turno"), HttpStatus.FORBIDDEN);
+    }
+
+    // Comparo el turno que trato de crear con todos los anteriores.
+
+    public boolean turnHasSalvoes (Salvo newSalvo, Set<Salvo> playerSalvoes) {
+        boolean hasSalvoes = false;
+        for (Salvo salvo: playerSalvoes) {
+            if(salvo.getTurno() == newSalvo.getTurno()) {
+                hasSalvoes = true;
+            }
+        }
+
+        return hasSalvoes;
+    }
+
+    //LeaderBoard
     @RequestMapping("/leaderBoard")
     public List<Map<String,Object>> makeLeaderBoard(){
         return playerRepository
@@ -238,7 +261,5 @@ public class SalvoController {
         dto.put(clave,value);
         return dto;
     }
-
-
 
 }

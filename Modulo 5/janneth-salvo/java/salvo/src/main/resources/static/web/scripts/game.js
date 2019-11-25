@@ -31,13 +31,22 @@ function loadData(){
             else
                 playerInfo = [data.gamePlayers[1].player.email,data.gamePlayers[0].player.email];
 
-            $('#playerInfo').text(playerInfo[0] + '(you) vs ' + playerInfo[1]);*/
+            $('#playerInfo').text(playerInfo[0] + '(you) vs ' + playerInfo[1]);
 
             data.ships.forEach(function(shipPiece){
                 shipPiece.shipLocations.forEach(function(location){
                     $('#'+location).addClass('ship-piece');
                 })
-            });
+            });*/
+             data.ships.forEach(function(shipPiece){
+                            shipPiece.shipLocations.forEach(function(location){
+                            //console.log(location);
+                                $('#'+location).addClass('ship-piece');
+                               // console.log(location.toLowerCase());
+                            })
+             });
+             console.log(location);
+
         })
         .fail(function( jqXHR, textStatus ) {
           alert( "Failed: " + textStatus );
