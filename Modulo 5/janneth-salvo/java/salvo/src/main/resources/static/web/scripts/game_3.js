@@ -98,7 +98,7 @@ function newGame() {
     url = '/api/games/';
     $.post(url)
         .done(function (data) {
-            return location.href = "/web/game.html?gp=" + data.gpid;
+            return location.href = "/web/game1.html?gp=" + data.gpid;
         })
 }
 function logIn() {
@@ -178,7 +178,7 @@ location.href = gameViewUrl;
       url = '/api/games/' + data + '/players';
       $.post(url)
           .done(function (data) {
-              return location.href = "/web/game.html?gp=" + data.gpid;
+              return location.href = "/web/game1.html?gp=" + data.gpid;
           })
   }
 
