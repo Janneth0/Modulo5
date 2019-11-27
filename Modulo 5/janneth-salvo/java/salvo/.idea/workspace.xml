@@ -1,49 +1,34 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="bfc26202-6842-40e2-8b72-f1b3d867d365" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/web/dist/gridstack-extra.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/web/dist/gridstack-extra.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/web/dist/gridstack.all.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/web/dist/gridstack.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/web/dist/gridstack.jQueryUI.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/web/dist/gridstack.jQueryUI.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/web/dist/gridstack.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/web/dist/gridstack.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/web/dist/gridstack.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/web/dist/gridstack.min.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/web/dist/jquery-3.4.1.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/web/dist/jquery-ui.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/web/dist/jquery-ui.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/web/dist/jquery.ui.touch-punch.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/web/dist/lodash.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/web/dist/normalize.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/web/game1.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/web/grid.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/web/scripts/main.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/web/styles/ocean.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/web/styles/ships/asdfgg.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/web/styles/ships/battleship.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/web/styles/ships/battleship_vertical.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/web/styles/ships/carrier.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/web/styles/ships/carrier_vertical.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/web/styles/ships/destroyer.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/web/styles/ships/destroyer_vertical.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/web/styles/ships/patrol_boat.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/web/styles/ships/patrol_boat_vertical.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/web/styles/ships/submarine.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/web/styles/ships/submarine_vertical.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/web/styles/style.css" afterDir="false" />
+    <list default="true" id="e0d1c0bd-f146-49e7-8061-a05251f8b8ee" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/web/place-ship.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/executionHistory/executionHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/executionHistory/executionHistory.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/fileHashes/fileHashes.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/fileHashes/fileHashes.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/javaCompile/javaCompile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/javaCompile/javaCompile.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/javaCompile/taskHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/javaCompile/taskHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/web/game.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/web/game.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/codeoftheweb/salvo/Game.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/codeoftheweb/salvo/Game.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/codeoftheweb/salvo/Player.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/codeoftheweb/salvo/Player.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/codeoftheweb/salvo/SalvoApplication.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/codeoftheweb/salvo/SalvoApplication.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/codeoftheweb/salvo/SalvoController.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/codeoftheweb/salvo/SalvoController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/codeoftheweb/salvo/ShipController.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/codeoftheweb/salvo/ShipController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/codeoftheweb/salvo/WebSecurityConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/codeoftheweb/salvo/WebSecurityConfig.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/codeoftheweb/salvo/WebSecurityConfiguration.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/codeoftheweb/salvo/WebSecurityConfiguration.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/resources/main/static/web/game.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/resources/main/static/web/game.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/resources/main/static/web/scripts/game.js" beforeDir="false" afterPath="$PROJECT_DIR$/build/resources/main/static/web/scripts/game.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/resources/main/static/web/scripts/game_3.js" beforeDir="false" afterPath="$PROJECT_DIR$/build/resources/main/static/web/scripts/game_3.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/codeoftheweb/salvo/SalvoController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/codeoftheweb/salvo/SalvoController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/battleship-gridStack/grid.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/battleship-gridStack/grid.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/web/game1.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/web/game1.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/static/web/scripts/game.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/web/scripts/game.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/web/scripts/game_3.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/web/scripts/game_3.js" afterDir="false" />
     </list>
+    <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -79,12 +64,6 @@
                 <item name="Tasks" type="e4a08cd1:TasksNode" />
                 <item name="application" type="c8890929:TasksNode$1" />
               </path>
-              <path>
-                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
-                <item name="salvo" type="f1a62948:ProjectNode" />
-                <item name="Tasks" type="e4a08cd1:TasksNode" />
-                <item name="build" type="c8890929:TasksNode$1" />
-              </path>
             </expand>
             <select />
           </tree_state>
@@ -92,10 +71,118 @@
       </state>
     </system>
   </component>
+  <component name="FileEditorManager">
+    <leaf>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/codeoftheweb/salvo/SalvoController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="380">
+              <caret line="203" column="70" selection-start-line="203" selection-start-column="70" selection-end-line="203" selection-end-column="70" />
+              <folding>
+                <element signature="method#getGames#0;class#SalvoController#0" />
+                <element signature="method#createGame#0;class#SalvoController#0" />
+                <element signature="method#joinGame#0;class#SalvoController#0" />
+                <element signature="method#isGuest#0;class#SalvoController#0" />
+                <element signature="method#makeGameDTO#0;class#SalvoController#0" />
+                <element signature="method#getAllGamePlayers#0;class#SalvoController#0" />
+                <element signature="method#makeGamePlayerDTO#0;class#SalvoController#0" />
+                <element signature="method#register#0;class#SalvoController#0" />
+                <element signature="method#getGameViewByGamePlayerID#0;class#SalvoController#0" />
+                <element signature="method#turnHasSalvoes#0;class#SalvoController#0" />
+                <element signature="method#makeLeaderBoard#0;class#SalvoController#0" />
+                <element signature="method#playerLeaderBoardDTO#0;class#SalvoController#0" />
+                <element signature="method#getScoreList#0;class#SalvoController#0" />
+                <element signature="method#makeMap#0;class#SalvoController#0" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/codeoftheweb/salvo/ShipController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="218">
+              <caret line="36" lean-forward="true" selection-start-line="36" selection-end-line="36" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/static/web/games.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="114">
+              <caret line="6" column="104" lean-forward="true" selection-start-line="5" selection-start-column="4" selection-end-line="6" selection-end-column="104" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/static/web/game.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="532">
+              <caret line="28" column="8" selection-start-line="28" selection-start-column="8" selection-end-line="28" selection-end-column="8" />
+              <folding>
+                <element signature="n#section#1;n#body#0;n#html#0;n#!!top" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/static/web/game1.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="261">
+              <caret line="30" column="39" lean-forward="true" selection-start-line="30" selection-start-column="39" selection-end-line="30" selection-end-column="63" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/static/web/scripts/game.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="19">
+              <caret line="39" column="17" lean-forward="true" selection-start-line="39" selection-start-column="17" selection-end-line="39" selection-end-column="17" />
+              <folding>
+                <element signature="e#0#3114#0" />
+                <element signature="e#0#3114#0" />
+                <element signature="e#0#3114#0" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/static/battleship-gridStack/gridModificado.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="522">
+              <caret line="31" column="7" lean-forward="true" selection-start-line="31" selection-start-column="7" selection-end-line="31" selection-end-column="7" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/static/battleship-gridStack/grid.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="266">
+              <caret line="14" column="54" selection-start-line="14" selection-start-column="54" selection-end-line="14" selection-end-column="54" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/static/web/place-ship.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="76">
+              <caret line="4" column="16" selection-start-line="4" selection-start-column="11" selection-end-line="4" selection-end-column="16" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="HTML File" />
       </list>
     </option>
@@ -103,20 +190,125 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../../.." />
   </component>
-  <component name="ProjectId" id="1Tveu83ZH1Bq12sgZGcdbGTbSVK" />
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/src/main/resources/static/web/place-ship.html" />
+        <option value="$PROJECT_DIR$/src/main/resources/static/battleship-gridStack/grid.html" />
+        <option value="$PROJECT_DIR$/src/main/java/com/codeoftheweb/salvo/SalvoController.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/static/web/scripts/game.js" />
+        <option value="$PROJECT_DIR$/src/main/resources/static/web/game1.html" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="64" />
+    <option name="y" value="10" />
+    <option name="width" value="1228" />
+    <option name="height" value="696" />
+  </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="salvo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="salvo" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+            </path>
+            <path>
+              <item name="salvo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="salvo" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="salvo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="salvo" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+            </path>
+            <path>
+              <item name="salvo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="salvo" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="salvo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="salvo" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="salvo" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="salvo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="salvo" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="salvo" type="462c0819:PsiDirectoryNode" />
+              <item name="SalvoApplication.java" type="529ef68f:ClassesTreeStructureProvider$PsiClassOwnerTreeNode" />
+            </path>
+            <path>
+              <item name="salvo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="salvo" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="salvo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="salvo" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="static" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="salvo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="salvo" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="static" type="462c0819:PsiDirectoryNode" />
+              <item name="battleship-gridStack" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="salvo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="salvo" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="static" type="462c0819:PsiDirectoryNode" />
+              <item name="web" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="salvo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="salvo" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="static" type="462c0819:PsiDirectoryNode" />
+              <item name="web" type="462c0819:PsiDirectoryNode" />
+              <item name="scripts" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+    </panes>
+  </component>
   <component name="PropertiesComponent">
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
-    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1574209899009" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/resources/static/web" />
-  </component>
-  <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\}\Desktop\Modulo5\Modulo 5\janneth-salvo\java\salvo\src\main\resources\static\web" />
-      <recent name="C:\Users\}\Desktop\Modulo5\Modulo 5\janneth-salvo\java\salvo\src\main\resources\static\web\scripts" />
-      <recent name="C:\Users\}\Desktop\Modulo5\Modulo 5\janneth-salvo\java\salvo\src\main\resources\static\web\styles" />
-    </key>
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1574815182040" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -130,7 +322,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Gradle.salvo [bootRun]">
+  <component name="RunManager">
     <configuration name="salvo [bootRun]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -150,29 +342,9 @@
       <GradleScriptDebugEnabled>true</GradleScriptDebugEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="salvo [clean]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value="clean" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <GradleScriptDebugEnabled>true</GradleScriptDebugEnabled>
-      <method v="2" />
-    </configuration>
     <recent_temporary>
       <list>
         <item itemvalue="Gradle.salvo [bootRun]" />
-        <item itemvalue="Gradle.salvo [clean]" />
       </list>
     </recent_temporary>
   </component>
@@ -181,30 +353,134 @@
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="bfc26202-6842-40e2-8b72-f1b3d867d365" name="Default Changelist" comment="" />
-      <created>1574203952267</created>
+      <changelist id="e0d1c0bd-f146-49e7-8061-a05251f8b8ee" name="Default Changelist" comment="" />
+      <created>1574804056110</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1574203952267</updated>
+      <updated>1574804056110</updated>
     </task>
     <servers />
   </component>
-  <component name="Vcs.Log.Tabs.Properties">
-    <option name="TAB_STATES">
-      <map>
-        <entry key="MAIN">
-          <value>
-            <State>
-              <option name="COLUMN_ORDER" />
-            </State>
-          </value>
-        </entry>
-      </map>
-    </option>
+  <component name="ToolWindowManager">
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <layout>
+      <window_info id="Image Layers" />
+      <window_info id="Designer" />
+      <window_info id="UI Designer" />
+      <window_info id="Capture Tool" />
+      <window_info id="Favorites" side_tool="true" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.18835099" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info anchor="bottom" id="Version Control" />
+      <window_info anchor="bottom" id="Terminal" />
+      <window_info anchor="bottom" id="Event Log" side_tool="true" />
+      <window_info anchor="bottom" id="Build" weight="0.3295082" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.3295082" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="right" id="Palette" />
+      <window_info anchor="right" id="Gradle" weight="0.32980332" />
+      <window_info anchor="right" id="Theme Preview" />
+      <window_info anchor="right" id="Maven" />
+      <window_info anchor="right" id="Capture Analysis" />
+      <window_info anchor="right" id="Palette&#9;" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+    </layout>
   </component>
-  <component name="antWorkspaceConfiguration">
-    <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
-    <option name="FILTER_TARGETS" value="false" />
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/codeoftheweb/salvo/ShipController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="218">
+          <caret line="36" lean-forward="true" selection-start-line="36" selection-end-line="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/static/web/place-ship.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="76">
+          <caret line="4" column="16" selection-start-line="4" selection-start-column="11" selection-end-line="4" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/static/battleship-gridStack/gridModificado.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="522">
+          <caret line="31" column="7" lean-forward="true" selection-start-line="31" selection-start-column="7" selection-end-line="31" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/static/battleship-gridStack/grid.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="266">
+          <caret line="14" column="54" selection-start-line="14" selection-start-column="54" selection-end-line="14" selection-end-column="54" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/codeoftheweb/salvo/SalvoController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="380">
+          <caret line="203" column="70" selection-start-line="203" selection-start-column="70" selection-end-line="203" selection-end-column="70" />
+          <folding>
+            <element signature="method#getGames#0;class#SalvoController#0" />
+            <element signature="method#createGame#0;class#SalvoController#0" />
+            <element signature="method#joinGame#0;class#SalvoController#0" />
+            <element signature="method#isGuest#0;class#SalvoController#0" />
+            <element signature="method#makeGameDTO#0;class#SalvoController#0" />
+            <element signature="method#getAllGamePlayers#0;class#SalvoController#0" />
+            <element signature="method#makeGamePlayerDTO#0;class#SalvoController#0" />
+            <element signature="method#register#0;class#SalvoController#0" />
+            <element signature="method#getGameViewByGamePlayerID#0;class#SalvoController#0" />
+            <element signature="method#turnHasSalvoes#0;class#SalvoController#0" />
+            <element signature="method#makeLeaderBoard#0;class#SalvoController#0" />
+            <element signature="method#playerLeaderBoardDTO#0;class#SalvoController#0" />
+            <element signature="method#getScoreList#0;class#SalvoController#0" />
+            <element signature="method#makeMap#0;class#SalvoController#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/static/web/game.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="532">
+          <caret line="28" column="8" selection-start-line="28" selection-start-column="8" selection-end-line="28" selection-end-column="8" />
+          <folding>
+            <element signature="n#section#1;n#body#0;n#html#0;n#!!top" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/static/web/games.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="114">
+          <caret line="6" column="104" lean-forward="true" selection-start-line="5" selection-start-column="4" selection-end-line="6" selection-end-column="104" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/static/web/game1.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="261">
+          <caret line="30" column="39" lean-forward="true" selection-start-line="30" selection-start-column="39" selection-end-line="30" selection-end-column="63" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/static/web/scripts/game.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="19">
+          <caret line="39" column="17" lean-forward="true" selection-start-line="39" selection-start-column="17" selection-end-line="39" selection-end-column="17" />
+          <folding>
+            <element signature="e#0#3114#0" />
+            <element signature="e#0#3114#0" />
+            <element signature="e#0#3114#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
   </component>
   <component name="masterDetails">
     <states>

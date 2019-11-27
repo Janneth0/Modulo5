@@ -47,8 +47,38 @@ function loadData(){
              });
              console.log(location);
 
+
+      if (data.ships.length > 0) {
+        console.log("dandfgsdf");
+
+        console.log(data.ships);
+        $("#agregaBarcos").hide();
+      } else {
+        $("#agregaBarcos").show();
+      };
+
+      let salvosP1 = data.salvoes.filter(jugador => (jugador.player === Number(getParameterByName('gp'))))
+      let salvosP2 = data.salvoes.filter(jugador => (jugador.player !== Number(getParameterByName('gp'))))
+      console.log(salvosP1)
+      console.log(salvosP2)
+
+      salvosP1.forEach(shoot => {
+
+        shoot.salvoes.forEach(hit => {
+          $('#shoots' + hit.toLowerCase()).addClass('hit-cell').append(shoot.turno);
+          console.log(shoot.turno);
+
+
+
         })
-        .fail(function( jqXHR, textStatus ) {
-          alert( "Failed: " + textStatus );
-        });
+      })
+      salvosP2.forEach(shoot => {
+        shoot.salvoes.forEach(hit => {
+          $('#ships' + hit.toLowerCase()).addClass('hit-cell').append(shoot.turno);
+        })
+      })
+    })
+    .fail(function (jqXHR, textStatus) {
+      alert("Failed: " + textStatus);
+    });
 };

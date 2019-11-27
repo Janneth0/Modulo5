@@ -126,7 +126,7 @@ public class SalvoController {
 
         return dto;
     }
-
+    ///
     @RequestMapping(path = "/players", method = RequestMethod.POST)
     public ResponseEntity<Object> register(@RequestParam String username, @RequestParam String password) {
 
@@ -184,30 +184,30 @@ public class SalvoController {
 
     //Agregar Salvos//
     @RequestMapping(value = "/games/players/{gpid}/salvoes",  method = RequestMethod.POST)
-    public ResponseEntity<Map> addSalvo(@PathVariable long gpid,
-                                        @RequestBody Salvo  salvo,
-                                        Authentication authentication){
-
+    public ResponseEntity<Map> addSalvo(@PathVariable long gpid, @RequestBody Salvo  salvo, Authentication authentication){
         if(isGuest(authentication)){
             return new ResponseEntity<>(makeMap("error","NO esta autorizado"), HttpStatus.UNAUTHORIZED);
         }
-
         Player player  = playerRepository.findByUserName(authentication.getName()).orElse(null);
         GamePlayer self  = gamePlayerRepository.findById(gpid).orElse(null);
-
         if(self == null){
             return new ResponseEntity<>(makeMap("error","No existe el game player"), HttpStatus.UNAUTHORIZED);
         }
-
         if(self.getPlayer().getId() !=  player.getId()){
             return new ResponseEntity<>(makeMap("error","Los players no coinciden"), HttpStatus.FORBIDDEN);
         }
-
         if (self.getShips().isEmpty()) {
             return new ResponseEntity<>(makeMap("error", "No está autorizado, tienes que registrar tus ships"), HttpStatus.UNAUTHORIZED);
         }
+        //COMPROBAR SI SE TIENE MENOS DE 5 TIROS
+        if (salvo.getLocations().size() > 5){
+            return new ResponseEntity<>(makeMap("error","salvos no mas"), HttpStatus.FORBIDDEN);
+
+        }
+
 
         //Verificar si ya disparó en este turno o no , sino lo creé me guarda el salvo nuevo, sino no me deja disparar.
+
 
         if(!turnHasSalvoes (salvo,self.getSalvoes())){
             salvo.setTurno(self.getSalvoes().size() +1);
@@ -255,7 +255,6 @@ public class SalvoController {
         dto.put("lost", player.getLosses(player.getScores()));
         return dto;
     }
-
     public Map<String,Object> makeMap(String clave, Object value){
         Map<String,Object> dto = new LinkedHashMap<>();
         dto.put(clave,value);
