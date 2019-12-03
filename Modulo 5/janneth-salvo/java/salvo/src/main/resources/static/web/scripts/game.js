@@ -84,3 +84,11 @@ function loadData(){
 };
 
 createGrid(11, $(".grid-salvoes"), 'salvoes')
+//lines 45 comienza la parte de pinter los tiros en game.js
+
+//obtener ubicacion del tiro apartir de la linea 93- game.js
+
+//84----math invoca metodos matematicos
+
+//salvogrind.js no importa
+//

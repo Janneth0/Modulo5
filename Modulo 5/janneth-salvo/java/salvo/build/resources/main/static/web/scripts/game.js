@@ -82,3 +82,5 @@ function loadData(){
       alert("Failed: " + textStatus);
     });
 };
+
+createGrid(11, $(".grid-salvoes"), 'salvoes')
