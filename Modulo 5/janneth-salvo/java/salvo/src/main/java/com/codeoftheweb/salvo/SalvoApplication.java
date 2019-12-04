@@ -23,10 +23,7 @@ import javax.persistence.SecondaryTable;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
-import java.util.Arrays;
-import java.util.Date;
-import java.util.Set;
-import java.util.HashSet;
+import java.util.*;
 
 
 @SpringBootApplication
@@ -124,118 +121,67 @@ public class  SalvoApplication {
 
 			///DATOS DE SHIP				Ship ship22=new Ship("Destroyer",gp11,location22);
 			///DATOS DE SHIP
-			//locations ships
-			Set<String> shipLocation1 = new HashSet<>(Arrays.asList("H2", "H3", "H3"));
-			Set<String> shipLocation2 = new HashSet<>(Arrays.asList("E1", "F1", "G1"));
-			Set<String> shipLocation3 = new HashSet<>(Arrays.asList("B4", "B5"));
-			Set<String> shipLocation4 = new HashSet<>(Arrays.asList("B5", "C5", "D5"));
-			Set<String> shipLocation5 = new HashSet<>(Arrays.asList("F1", "F2"));
-			Set<String> shipLocation6 = new HashSet<>(Arrays.asList("B5", "C5", "D5"));
-			Set<String> shipLocation7 = new HashSet<>(Arrays.asList("C6", "C7"));
-			Set<String> shipLocation8 = new HashSet<>(Arrays.asList("A2", "A3", "A4"));
-			Set<String> shipLocation9 = new HashSet<>(Arrays.asList("G6", "H6"));
-			Set<String> shipLocation10 = new HashSet<>(Arrays.asList("B5", "C5", "D5"));
-			Set<String> shipLocation11 = new HashSet<>(Arrays.asList("C6", "C7"));
-			Set<String> shipLocation12 = new HashSet<>(Arrays.asList("A2", "A3", "A4"));
-			Set<String> shipLocation13 = new HashSet<>(Arrays.asList("G6", "H6"));
-			Set<String> shipLocation14 = new HashSet<>(Arrays.asList("B5", "C5", "D5"));
-			Set<String> shipLocation15 = new HashSet<>(Arrays.asList("C6", "C7"));
-			Set<String> shipLocation16 = new HashSet<>(Arrays.asList("A2", "A3", "A4"));
-			Set<String> shipLocation17 = new HashSet<>(Arrays.asList("G6", "H6"));
-			Set<String> shipLocation18 = new HashSet<>(Arrays.asList("B5", "C5", "D5"));
-			Set<String> shipLocation19 = new HashSet<>(Arrays.asList("C6", "C7"));
-			Set<String> shipLocation20 = new HashSet<>(Arrays.asList("A2", "A3", "A4"));
-			Set<String> shipLocation21 = new HashSet<>(Arrays.asList("G6", "H6"));
-			Set<String> shipLocation22 = new HashSet<>(Arrays.asList("B5", "C5", "D5"));
-			Set<String> shipLocation23 = new HashSet<>(Arrays.asList("C6", "C7"));
-			Set<String> shipLocation24 = new HashSet<>(Arrays.asList("B5", "C5", "D5"));
-			Set<String> shipLocation25 = new HashSet<>(Arrays.asList("C6", "C7"));
-			Set<String> shipLocation26 = new HashSet<>(Arrays.asList("A2", "A3", "A4"));
-			Set<String> shipLocation27 = new HashSet<>(Arrays.asList("G6", "H6"));
 			//asignar datos
 
 			//game1
-			Ship ship1 = new Ship("Destroyer", gp1, shipLocation1);
-			Ship ship2 = new Ship("Submarine", gp1, shipLocation2);
-			Ship ship3 = new Ship("Patrol Boat", gp1, shipLocation3);
-			Ship ship4 = new Ship("Destroyer", gp2, shipLocation4);
-			Ship ship5 = new Ship("Patrol Boat", gp2, shipLocation5);
+			Ship ship1 = new Ship("Destroyer", gp1, new ArrayList<>(Arrays.asList("H2", "H3", "H4")));
+			Ship ship2 = new Ship("Submarine", gp1, new ArrayList<>(Arrays.asList("E1", "F1", "G1")));
+			Ship ship3 = new Ship("Patrol Boat", gp1, new ArrayList<>(Arrays.asList("B4","B5")));
+			Ship ship4 = new Ship("Destroyer", gp2,  new ArrayList<>(Arrays.asList("B5", "C5", "D5")));
+			Ship ship5 = new Ship("Patrol Boat", gp2, new ArrayList<>(Arrays.asList("F1", "F2")));
 			//game2
-			Ship ship6 = new Ship("Destroyer", gp3, shipLocation6);
-			Ship ship7 = new Ship("Patrol Boat", gp3, shipLocation7);
-			Ship ship8 = new Ship("Submarine", gp4, shipLocation8);
-			Ship ship9 = new Ship("Patrol Boat", gp4, shipLocation9);
+			Ship ship6 = new Ship("Destroyer", gp3, new ArrayList<>(Arrays.asList("B5", "C5", "D5")));
+			Ship ship7 = new Ship("Patrol Boat", gp3, new ArrayList<>(Arrays.asList("C6", "C7")));
+			Ship ship8 = new Ship("Submarine", gp4, new ArrayList<>(Arrays.asList("A2", "A3", "A4")));
+			Ship ship9 = new Ship("Patrol Boat", gp4,  new ArrayList<>(Arrays.asList("G6", "H6")));
 			//game3
-			Ship ship10 = new Ship("Destroyer", gp5, shipLocation10);
-			Ship ship11 = new Ship("Patrol Boat", gp3, shipLocation11);
-			Ship ship12 = new Ship("Submarine", gp4, shipLocation12);
-			Ship ship13 = new Ship("Patrol Boat", gp4, shipLocation13);
+			Ship ship10 = new Ship("Destroyer", gp5, new ArrayList<>(Arrays.asList("B5", "C5", "D5")));
+			Ship ship11 = new Ship("Patrol Boat", gp3, new ArrayList<>(Arrays.asList("C6", "C7")));
+			Ship ship12 = new Ship("Submarine", gp4, new ArrayList<>(Arrays.asList("A2", "A3", "A4")));
+			Ship ship13 = new Ship("Patrol Boat", gp4,  new ArrayList<>(Arrays.asList("G6", "H6")));
 			//game4
-			Ship ship14 = new Ship("Destroyer", gp3, shipLocation14);
-			Ship ship15 = new Ship("Patrol Boat", gp3, shipLocation15);
-			Ship ship16 = new Ship("Submarine", gp4, shipLocation16);
-			Ship ship17 = new Ship("Patrol Boat", gp4, shipLocation17);
+			Ship ship14 = new Ship("Destroyer", gp3,  new ArrayList<>(Arrays.asList("B5", "C5", "D5")));
+			Ship ship15 = new Ship("Patrol Boat", gp3, new ArrayList<>(Arrays.asList("C6", "C7")));
+			Ship ship16 = new Ship("Submarine", gp4, new ArrayList<>(Arrays.asList("A2", "A3", "A4")));
+			Ship ship17 = new Ship("Patrol Boat", gp4,  new ArrayList<>(Arrays.asList("G6", "H6")));
 			//game5
-			Ship ship18 = new Ship("Destroyer", gp3, shipLocation18);
-			Ship ship19 = new Ship("Patrol Boat", gp3, shipLocation19);
-			Ship ship20 = new Ship("Submarine", gp4, shipLocation20);
-			Ship ship21 = new Ship("Patrol Boat", gp4, shipLocation21);
+			Ship ship18 = new Ship("Destroyer", gp3,  new ArrayList<>(Arrays.asList("B5", "C5", "D5")));
+			Ship ship19 = new Ship("Patrol Boat", gp3, new ArrayList<>(Arrays.asList("C6", "C7")));
+			Ship ship20 = new Ship("Submarine", gp4, new ArrayList<>(Arrays.asList("A2", "A3", "A4")));
+			Ship ship21 = new Ship("Patrol Boat", gp4, new ArrayList<>(Arrays.asList("G6", "H6")));
 			//game6
-			Ship ship22 = new Ship("Destroyer", gp3, shipLocation22);
-			Ship ship23 = new Ship("Patrol Boat", gp3, shipLocation23);
+			Ship ship22 = new Ship("Destroyer", gp3, new ArrayList<>(Arrays.asList("B5", "C5", "D5")));
+			Ship ship23 = new Ship("Patrol Boat", gp3,  new ArrayList<>(Arrays.asList("C6", "C7")));
 			//game8
-			Ship ship24 = new Ship("Destroyer", gp3, shipLocation24);
-			Ship ship25 = new Ship("Patrol Boat", gp3, shipLocation25);
-			Ship ship26 = new Ship("Submarine", gp4, shipLocation26);
-			Ship ship27 = new Ship("Patrol Boat", gp4, shipLocation27);
+			Ship ship24 = new Ship("Destroyer", gp3, new ArrayList<>(Arrays.asList("B5", "C5", "D5")));
+			Ship ship25 = new Ship("Patrol Boat", gp3, new ArrayList<>(Arrays.asList("C6", "C7")));
+			Ship ship26 = new Ship("Submarine", gp4, new ArrayList<>(Arrays.asList("A2", "A3", "A4")));
+			Ship ship27 = new Ship("Patrol Boat", gp4, new ArrayList<>(Arrays.asList("G6", "H6")));
 
 			shipRepository.saveAll(Arrays.asList(ship1, ship2, ship3, ship4, ship4, ship5, ship6, ship7, ship8, ship9, ship10, ship11, ship12, ship13, ship14, ship15, ship16, ship17, ship18, ship19, ship20, ship21, ship22, ship23, ship24, ship25, ship26, ship27));
 
-
 			///DATOS DE SALVO
-			Set<String> salvoLocation1 = new HashSet<>(Arrays.asList("B5", "C5", "F1"));
-			Set<String> salvoLocation2 = new HashSet<>(Arrays.asList("B4", "B5", "B6"));
-			Set<String> salvoLocation3 = new HashSet<>(Arrays.asList("F2", "D5"));
-			Set<String> salvoLocation4 = new HashSet<>(Arrays.asList("E1", "H3", "A2"));
-			Set<String> salvoLocation5 = new HashSet<>(Arrays.asList("A2", "A4", "G6"));
-			Set<String> salvoLocation6 = new HashSet<>(Arrays.asList("B5", "D5", "C7"));
-			Set<String> salvoLocation7 = new HashSet<>(Arrays.asList("A3", "H6"));
-			Set<String> salvoLocation8 = new HashSet<>(Arrays.asList("C5", "C6"));
-			Set<String> salvoLocation9 = new HashSet<>(Arrays.asList("G6", "H6", "A4"));
-			Set<String> salvoLocation10 = new HashSet<>(Arrays.asList("H1", "H2", "H3"));
-			Set<String> salvoLocation11 = new HashSet<>(Arrays.asList("A2", "A3", "D8"));
-			Set<String> salvoLocation12 = new HashSet<>(Arrays.asList("E1", "F2", "G3"));
-			Set<String> salvoLocation13 = new HashSet<>(Arrays.asList("A3", "A4", "F7"));
-			Set<String> salvoLocation14 = new HashSet<>(Arrays.asList("B5", "C6", "H1"));
-			Set<String> salvoLocation15 = new HashSet<>(Arrays.asList("A2", "G6", "H6"));
-			Set<String> salvoLocation16 = new HashSet<>(Arrays.asList("C5", "C7", "D5"));
-			Set<String> salvoLocation17 = new HashSet<>(Arrays.asList("A1", "A2", "A3"));
-			Set<String> salvoLocation18 = new HashSet<>(Arrays.asList("B5", "B6", "C7"));
-			Set<String> salvoLocation19 = new HashSet<>(Arrays.asList("G6", "G7", "G8"));
-			Set<String> salvoLocation20 = new HashSet<>(Arrays.asList("C6", "D6", "E6"));
-			Set<String> salvoLocation21 = new HashSet<>(Arrays.asList("H1", "H8"));
-
-			Salvo salvo1 = new Salvo(gp1, 1, salvoLocation1);
-			Salvo salvo2 = new Salvo(gp2, 1, salvoLocation2);
-			Salvo salvo3 = new Salvo(gp1, 2, salvoLocation3);
-			Salvo salvo4 = new Salvo(gp2, 2, salvoLocation4);
-			Salvo salvo5 = new Salvo(gp3, 1, salvoLocation5);
-			Salvo salvo6 = new Salvo(gp4, 1, salvoLocation6);
-			Salvo salvo7 = new Salvo(gp3, 1, salvoLocation7);
-			Salvo salvo8 = new Salvo(gp4, 1, salvoLocation8);
-			Salvo salvo9 = new Salvo(gp5, 1, salvoLocation9);
-			Salvo salvo10 = new Salvo(gp6, 1, salvoLocation10);
-			Salvo salvo11 = new Salvo(gp5, 1, salvoLocation11);
-			Salvo salvo12 = new Salvo(gp6, 1, salvoLocation12);
-			Salvo salvo13 = new Salvo(gp7, 1, salvoLocation13);
-			Salvo salvo14 = new Salvo(gp8, 1, salvoLocation14);
-			Salvo salvo15 = new Salvo(gp7, 1, salvoLocation15);
-			Salvo salvo16 = new Salvo(gp8, 1, salvoLocation16);
-			Salvo salvo17 = new Salvo(gp9, 1, salvoLocation17);
-			Salvo salvo18 = new Salvo(gp10, 1, salvoLocation18);
-			Salvo salvo19 = new Salvo(gp9, 1, salvoLocation19);
-			Salvo salvo20 = new Salvo(gp10, 1, salvoLocation20);
-			Salvo salvo21 = new Salvo(gp10, 1, salvoLocation21);
+			Salvo salvo1 = new Salvo(gp1, 1, new HashSet<>(Arrays.asList("B5", "C5", "F1")));
+			Salvo salvo2 = new Salvo(gp2, 1, new HashSet<>(Arrays.asList("B4", "B5", "B6")));
+			Salvo salvo3 = new Salvo(gp1, 2, new HashSet<>(Arrays.asList("F2", "D5")));
+			Salvo salvo4 = new Salvo(gp2, 2, new HashSet<>(Arrays.asList("E1", "H3", "A2")));
+			Salvo salvo5 = new Salvo(gp3, 1, new HashSet<>(Arrays.asList("A2", "A4", "G6")));
+			Salvo salvo6 = new Salvo(gp4, 1, new HashSet<>(Arrays.asList("B5", "D5", "C7")));
+			Salvo salvo7 = new Salvo(gp3, 1,new HashSet<>(Arrays.asList("A3", "H6")));
+			Salvo salvo8 = new Salvo(gp4, 1, new HashSet<>(Arrays.asList("C5", "C6")));
+			Salvo salvo9 = new Salvo(gp5, 1, new HashSet<>(Arrays.asList("G6", "H6", "A4")));
+			Salvo salvo10 = new Salvo(gp6, 1,new HashSet<>(Arrays.asList("H1", "H2", "H3")));
+			Salvo salvo11 = new Salvo(gp5, 1, new HashSet<>(Arrays.asList("A2", "A3", "D8")));
+			Salvo salvo12 = new Salvo(gp6, 1, new HashSet<>(Arrays.asList("E1", "F2", "G3")));
+			Salvo salvo13 = new Salvo(gp7, 1, new HashSet<>(Arrays.asList("A3", "A4", "F7")));
+			Salvo salvo14 = new Salvo(gp8, 1, new HashSet<>(Arrays.asList("B5", "C6", "H1")));
+			Salvo salvo15 = new Salvo(gp7, 1, new HashSet<>(Arrays.asList("A2", "G6", "H6")));
+			Salvo salvo16 = new Salvo(gp8, 1, new HashSet<>(Arrays.asList("C5", "C7", "D5")));
+			Salvo salvo17 = new Salvo(gp9, 1, new HashSet<>(Arrays.asList("A1", "A2", "A3")));
+			Salvo salvo18 = new Salvo(gp10, 1, new HashSet<>(Arrays.asList("B5", "B6", "C7")));
+			Salvo salvo19 = new Salvo(gp9, 1, new HashSet<>(Arrays.asList("G6", "G7", "G8")));
+			Salvo salvo20 = new Salvo(gp10, 1, new HashSet<>(Arrays.asList("C6", "D6", "E6")));
+			Salvo salvo21 = new Salvo(gp10, 1, new HashSet<>(Arrays.asList("H1", "H8")));
 
 			salvoRepository.saveAll(Arrays.asList(salvo1, salvo2, salvo3, salvo4, salvo5, salvo6, salvo7, salvo8, salvo9, salvo10, salvo11, salvo12, salvo13, salvo14, salvo15, salvo16, salvo17, salvo18, salvo19, salvo20, salvo21));
 
@@ -246,8 +192,6 @@ public class  SalvoApplication {
 			Score score4 = new Score((float) 0, date, p4, g2);
 
 			scoreRepository.saveAll(Arrays.asList(score1, score2, score3, score4));
-
-
 		};
 
 	}

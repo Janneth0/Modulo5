@@ -5,6 +5,7 @@ import org.hibernate.annotations.GenericGenerator;
 
 import javax.persistence.*;
 import java.util.LinkedHashMap;
+import java.util.LinkedHashSet;
 import java.util.Map;
 import java.util.Set;
 
@@ -24,8 +25,9 @@ public class Salvo {
   private int turno;
 
   @ElementCollection
-  @Column(name = "location")
-  private Set<String> locations;
+  @Column(name="salvoLocation")
+  private Set<String> salvoLocations = new LinkedHashSet<>();
+
 
   //constructor
 
@@ -35,17 +37,9 @@ public class Salvo {
   public Salvo( GamePlayer gamePlayer, int turno, Set<String> locations) {
     this.gamePlayer = gamePlayer;
     this.turno = turno;
-    this.locations = locations;
+    this.salvoLocations = salvoLocations;
   }
-  public Object makeSalvoDTO() {
-    Map<String,Object> dto=new LinkedHashMap<>();
-    dto.put("turno",getTurno());
-    dto.put("player",this.getGamePlayer().getPlayer().getId());
-    dto.put("salvoLocations",getLocations());
-    return dto;
-  }
-  //get and set
-
+//------------GET & SET --------------------------------------//
   public long getId() {
     return id;
   }
@@ -61,10 +55,23 @@ public class Salvo {
   public void setTurno(int turno) {
     this.turno = turno;
   }
-  public Set<String> getLocations() {
-    return locations;
+  public Set<String> getSalvoLocations() {
+    return salvoLocations;
   }
-  public void setLocations(Set<String> locations) {
-    this.locations = locations;
+  public void setSalvoLocations(Set<String> salvoLocations) {
+    this.salvoLocations = salvoLocations;
   }
+
+
+
+  public Object makeSalvoDTO() {
+    Map<String,Object> dto=new LinkedHashMap<>();
+    dto.put("turno",getTurno());
+    dto.put("player",this.getGamePlayer().getPlayer().getId());
+    dto.put("salvoLocations",getSalvoLocations());
+    return dto;
+  }
+
+
+
 }

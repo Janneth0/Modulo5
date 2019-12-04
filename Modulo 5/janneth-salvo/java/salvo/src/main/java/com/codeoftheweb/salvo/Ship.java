@@ -3,9 +3,7 @@ package com.codeoftheweb.salvo;
 import org.hibernate.annotations.GenericGenerator;
 
 import javax.persistence.*;
-import java.util.LinkedHashMap;
-import java.util.Map;
-import java.util.Set;
+import java.util.*;
 
 @Entity
 public class Ship {
@@ -19,24 +17,18 @@ public class Ship {
   @JoinColumn(name = "gamePlayer_id")
   private GamePlayer gamePlayer;
   @ElementCollection
-  @Column(name = "location")
-  private Set<String> locations;
+  @Column(name="shipLocation")
+  private List<String> shipLocations = new ArrayList<>();
+
 
   public Ship() {
   }
-  public Ship(String type, GamePlayer gamePlayer, Set<String> locations) {
+  public Ship(String type, GamePlayer gamePlayer, List<String> shipLocations) {
     this.type = type;
     this.gamePlayer = gamePlayer;
-    this.locations = locations;
+    this.shipLocations = shipLocations;
   }
-
-  public Object makeShipDTO() {
-    Map<String,Object> dto=new LinkedHashMap<String, Object>();
-    dto.put("type",this.getType());
-    dto.put("shipLocations",this.getLocations());
-    return dto;
-  }
-  //GET && SET
+  //--------------GET && SET-------------------------------------//
   public long getId() {
     return id;
   }
@@ -46,18 +38,25 @@ public class Ship {
   public GamePlayer getGamePlayer() {
     return gamePlayer;
   }
-  public Set<String> getLocations() {
-    return locations;
-  }
   public void setType(String type) {
     this.type = type;
   }
   public void setGamePlayer(GamePlayer gamePlayer) {
     this.gamePlayer = gamePlayer;
   }
-  public void setLocations(Set<String> locations) {
-    this.locations = locations;
+  public List<String> getShipLocations() {
+    return shipLocations;
+  }
+  public void setShipLocations(List<String> shipLocations) {
+    this.shipLocations = shipLocations;
   }
 
+
+  public Object makeShipDTO() {
+    Map<String,Object> dto=new LinkedHashMap<String, Object>();
+    dto.put("type",this.getType());
+    dto.put("shipLocations",this.getShipLocations());
+    return dto;
+  }
 
 }

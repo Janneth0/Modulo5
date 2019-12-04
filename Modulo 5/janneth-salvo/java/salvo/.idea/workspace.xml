@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="c2c915ca-c42a-4990-ac40-8426460161d1" name="Default Changelist" comment="">
+    <list default="true" id="264099fb-288d-476b-8f67-90cf805e42f5" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/executionHistory/executionHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/executionHistory/executionHistory.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/fileContent/fileContent.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/fileContent/fileContent.lock" afterDir="false" />
@@ -11,23 +11,28 @@
       <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/javaCompile/javaCompile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/javaCompile/javaCompile.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/javaCompile/taskHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/javaCompile/taskHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/codeoftheweb/salvo/Game.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/codeoftheweb/salvo/Game.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/codeoftheweb/salvo/GamePlayer.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/codeoftheweb/salvo/GamePlayer.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/codeoftheweb/salvo/Player.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/codeoftheweb/salvo/Player.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/codeoftheweb/salvo/Salvo.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/codeoftheweb/salvo/Salvo.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/codeoftheweb/salvo/SalvoApplication.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/codeoftheweb/salvo/SalvoApplication.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/codeoftheweb/salvo/SalvoController.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/codeoftheweb/salvo/SalvoController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/codeoftheweb/salvo/ShipController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/codeoftheweb/salvo/Ship.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/codeoftheweb/salvo/Ship.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/codeoftheweb/salvo/WebSecurityConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/codeoftheweb/salvo/WebSecurityConfig.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/codeoftheweb/salvo/WebSecurityConfiguration.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/codeoftheweb/salvo/WebSecurityConfiguration.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/resources/main/static/web/game1.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/resources/main/static/web/game1.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/resources/main/static/web/scripts/game.js" beforeDir="false" afterPath="$PROJECT_DIR$/build/resources/main/static/web/scripts/game.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/resources/main/static/web/styles/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/build/resources/main/static/web/styles/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/codeoftheweb/salvo/Game.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/codeoftheweb/salvo/Game.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/codeoftheweb/salvo/GamePlayer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/codeoftheweb/salvo/GamePlayer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/codeoftheweb/salvo/Salvo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/codeoftheweb/salvo/Salvo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/codeoftheweb/salvo/SalvoApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/codeoftheweb/salvo/SalvoApplication.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/codeoftheweb/salvo/SalvoController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/codeoftheweb/salvo/SalvoController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/codeoftheweb/salvo/ShipController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/codeoftheweb/salvo/Ship.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/codeoftheweb/salvo/Ship.java" afterDir="false" />
     </list>
+    <ignored path="$PROJECT_DIR$/.gradle/" />
+    <ignored path="$PROJECT_DIR$/build/" />
+    <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -55,6 +60,11 @@
               <path>
                 <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
                 <item name="salvo" type="f1a62948:ProjectNode" />
+                <item name="Source Sets" type="e897c970:GradleViewContributor$SourceSetsNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="salvo" type="f1a62948:ProjectNode" />
                 <item name="Tasks" type="e4a08cd1:TasksNode" />
               </path>
               <path>
@@ -70,22 +80,159 @@
       </state>
     </system>
   </component>
-  <component name="FileTemplateManagerImpl">
-    <option name="RECENT_TEMPLATES">
-      <list>
-        <option value="HTML File" />
-      </list>
-    </option>
+  <component name="FileEditorManager">
+    <leaf>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/codeoftheweb/salvo/GamePlayer.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="234">
+              <caret line="88" column="40" selection-start-line="88" selection-start-column="40" selection-end-line="88" selection-end-column="40" />
+              <folding>
+                <element signature="method#GamePlayer#0;class#GamePlayer#0" />
+                <element signature="e#1635#1670#1" />
+                <element signature="e#1663#1664#0" expanded="true" />
+                <element signature="method#makeGamePlayerDTO#0;class#GamePlayer#0" />
+                <element signature="method#Hitsdto#0;class#GamePlayer#0" />
+                <element signature="method#GetOpponent#0;class#GamePlayer#0" />
+                <element signature="method#getHits#0;class#GamePlayer#0" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/codeoftheweb/salvo/Ship.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="19">
+              <caret line="19" column="1" lean-forward="true" selection-start-line="19" selection-start-column="1" selection-end-line="19" selection-end-column="1" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/codeoftheweb/salvo/Game.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="670">
+              <caret line="62" lean-forward="true" selection-start-line="62" selection-end-line="62" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#683#684#0" expanded="true" />
+                <element signature="e#731#732#0" expanded="true" />
+                <element signature="e#1437#1453#0" expanded="true" />
+                <element signature="e#2295#2296#0" expanded="true" />
+                <element signature="e#2338#2339#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/codeoftheweb/salvo/Score.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-369">
+              <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
+              <folding>
+                <element signature="method#Score#1;class#Score#0" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/codeoftheweb/salvo/SalvoController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="331">
+              <caret line="213" column="9" lean-forward="true" selection-start-line="213" selection-start-column="9" selection-end-line="213" selection-end-column="9" />
+              <folding>
+                <element signature="method#getGames#0;class#SalvoController#0" />
+                <element signature="method#register#0;class#SalvoController#0" />
+                <element signature="method#createGame#0;class#SalvoController#0" />
+                <element signature="method#joinGame#0;class#SalvoController#0" />
+                <element signature="method#addShip#0;class#SalvoController#0" />
+                <element signature="method#isGuest#0;class#SalvoController#0" />
+                <element signature="method#makeGameDTO#0;class#SalvoController#0" />
+                <element signature="method#getAllGamePlayers#0;class#SalvoController#0" />
+                <element signature="method#makeGamePlayerDTO#0;class#SalvoController#0" />
+                <element signature="method#turnHasSalvoes#0;class#SalvoController#0" />
+                <element signature="method#WrongGamePlayer#0;class#SalvoController#0" />
+                <element signature="method#playerLeaderBoardDTO#0;class#SalvoController#0" />
+                <element signature="method#getScoreList#0;class#SalvoController#0" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../../.." />
   </component>
-  <component name="ProjectId" id="1UTbmCpGENBr7fNUjEIwkAWvXbJ" />
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/src/main/java/com/codeoftheweb/salvo/Salvo.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/codeoftheweb/salvo/Ship.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/codeoftheweb/salvo/Game.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/codeoftheweb/salvo/SalvoController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/codeoftheweb/salvo/GamePlayer.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/codeoftheweb/salvo/SalvoApplication.java" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="676" />
+    <option name="width" value="697" />
+    <option name="height" value="745" />
+  </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="salvo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="salvo" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+            </path>
+            <path>
+              <item name="salvo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="salvo" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="salvo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="salvo" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+            </path>
+            <path>
+              <item name="salvo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="salvo" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="salvo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="salvo" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="salvo" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
+    </panes>
+  </component>
   <component name="PropertiesComponent">
-    <property name="DefaultHtmlFileTemplate" value="HTML File" />
-    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1574985140948" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1575419583950" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -130,35 +277,131 @@
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="c2c915ca-c42a-4990-ac40-8426460161d1" name="Default Changelist" comment="" />
-      <created>1574980927879</created>
+      <changelist id="264099fb-288d-476b-8f67-90cf805e42f5" name="Default Changelist" comment="" />
+      <created>1575411804380</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1574980927879</updated>
+      <updated>1575411804380</updated>
     </task>
     <servers />
   </component>
-  <component name="Vcs.Log.Tabs.Properties">
-    <option name="TAB_STATES">
-      <map>
-        <entry key="MAIN">
-          <value>
-            <State />
-          </value>
-        </entry>
-      </map>
-    </option>
+  <component name="ToolWindowManager">
+    <frame x="-8" y="-8" width="1382" height="754" extended-state="6" />
+    <layout>
+      <window_info id="Image Layers" />
+      <window_info id="Designer" />
+      <window_info id="UI Designer" />
+      <window_info id="Capture Tool" />
+      <window_info id="Favorites" side_tool="true" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24962178" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info anchor="bottom" id="Version Control" />
+      <window_info anchor="bottom" id="Terminal" />
+      <window_info anchor="bottom" id="Event Log" side_tool="true" />
+      <window_info anchor="bottom" id="Build" weight="0.32850242" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.32850242" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="right" id="Palette" />
+      <window_info anchor="right" id="Gradle" weight="0.32980332" />
+      <window_info anchor="right" id="Theme Preview" />
+      <window_info anchor="right" id="Maven" />
+      <window_info anchor="right" id="Capture Analysis" />
+      <window_info anchor="right" id="Palette&#9;" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+    </layout>
   </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/codeoftheweb/salvo/SalvoController.java</url>
-          <line>287</line>
-          <option name="timeStamp" value="3" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/codeoftheweb/salvo/Salvo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="535">
+          <caret line="77" lean-forward="true" selection-start-line="77" selection-end-line="77" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/codeoftheweb/salvo/Game.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="670">
+          <caret line="62" lean-forward="true" selection-start-line="62" selection-end-line="62" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#683#684#0" expanded="true" />
+            <element signature="e#731#732#0" expanded="true" />
+            <element signature="e#1437#1453#0" expanded="true" />
+            <element signature="e#2295#2296#0" expanded="true" />
+            <element signature="e#2338#2339#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/codeoftheweb/salvo/GamePlayer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="234">
+          <caret line="88" column="40" selection-start-line="88" selection-start-column="40" selection-end-line="88" selection-end-column="40" />
+          <folding>
+            <element signature="method#GamePlayer#0;class#GamePlayer#0" />
+            <element signature="e#1635#1670#1" />
+            <element signature="e#1663#1664#0" expanded="true" />
+            <element signature="method#makeGamePlayerDTO#0;class#GamePlayer#0" />
+            <element signature="method#Hitsdto#0;class#GamePlayer#0" />
+            <element signature="method#GetOpponent#0;class#GamePlayer#0" />
+            <element signature="method#getHits#0;class#GamePlayer#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/codeoftheweb/salvo/SalvoApplication.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="19">
+          <caret line="131" column="13" lean-forward="true" selection-start-line="131" selection-start-column="13" selection-end-line="131" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/codeoftheweb/salvo/Ship.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="19">
+          <caret line="19" column="1" lean-forward="true" selection-start-line="19" selection-start-column="1" selection-end-line="19" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/codeoftheweb/salvo/SalvoController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="331">
+          <caret line="213" column="9" lean-forward="true" selection-start-line="213" selection-start-column="9" selection-end-line="213" selection-end-column="9" />
+          <folding>
+            <element signature="method#getGames#0;class#SalvoController#0" />
+            <element signature="method#register#0;class#SalvoController#0" />
+            <element signature="method#createGame#0;class#SalvoController#0" />
+            <element signature="method#joinGame#0;class#SalvoController#0" />
+            <element signature="method#addShip#0;class#SalvoController#0" />
+            <element signature="method#isGuest#0;class#SalvoController#0" />
+            <element signature="method#makeGameDTO#0;class#SalvoController#0" />
+            <element signature="method#getAllGamePlayers#0;class#SalvoController#0" />
+            <element signature="method#makeGamePlayerDTO#0;class#SalvoController#0" />
+            <element signature="method#turnHasSalvoes#0;class#SalvoController#0" />
+            <element signature="method#WrongGamePlayer#0;class#SalvoController#0" />
+            <element signature="method#playerLeaderBoardDTO#0;class#SalvoController#0" />
+            <element signature="method#getScoreList#0;class#SalvoController#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/codeoftheweb/salvo/Score.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-369">
+          <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
+          <folding>
+            <element signature="method#Score#1;class#Score#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
   </component>
   <component name="masterDetails">
     <states>

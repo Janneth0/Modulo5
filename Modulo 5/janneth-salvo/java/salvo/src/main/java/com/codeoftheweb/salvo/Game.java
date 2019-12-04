@@ -3,10 +3,7 @@ package com.codeoftheweb.salvo;
 import org.hibernate.annotations.GenericGenerator;
 
 import javax.persistence.*;
-import java.util.Date;
-import java.util.LinkedHashMap;
-import java.util.Map;
-import java.util.Set;
+import java.util.*;
 import java.util.stream.Collector;
 import java.util.stream.Collectors;
 
@@ -25,56 +22,58 @@ public class Game {
     @OneToMany(mappedBy = "game", fetch = FetchType.EAGER)
     private Set<Score> scores;
 
-
-    public Map<String,Object> makeGameDTO(Game game){
-        Map<String,Object> dto=new LinkedHashMap<String, Object>();
-        dto.put("id", game.getId());
-        dto.put("created",game.getCreationDate().getTime());
-        dto.put("gamePlayers",game.getGamePlayers());
-        dto.put("score",game.getScores()
-                .stream()
-                .map(scores-> scores.makeScoreDTO())
-                .collect(Collectors.toList()));
-        return dto;
-    }
-
     public Game() {
     }
-
     public Game(Date creationDate) {
         this.creationDate = creationDate;
     }
 //get && set
-
     public long getId() {
         return id;
     }
-
     public Date getCreationDate() {
         return creationDate;
     }
-
     public void setCreationDate(Date creationDate) {
         this.creationDate = creationDate;
     }
-
     public Set<GamePlayer> getGamePlayers() {
         return gamePlayers;
     }
-
     public void setGamePlayers(Set<GamePlayer> gamePlayers) {
         this.gamePlayers = gamePlayers;
     }
-
     public Set<Score> getScores() {
         return scores;
     }
-
     public void setScores(Set<Score> scores) {
         this.scores = scores;
     }
 
 
+    public Map<String,Object> makeGameDTO(Game game){
+        Map<String,Object> dto=new LinkedHashMap<String, Object>();
+        dto.put("id", this.getId());
+        dto.put("created",this.getCreationDate());
+        dto.put("gamePlayers",this.getGamePlayers());
+        dto.put("scores",this.getScores());
+        return dto;
+    }
 
 
+
+
+    public void addGamePlayer(GamePlayer gamePlayer) {
+        gamePlayers.add(gamePlayer);
+    }
+    /*
+    public void addGamePlayer(GamePlayer gamePlayer) {
+        //gamePlayer.setGame(this);
+        gamePlayers.add(gamePlayer);
+    }
+    public void setDate(Date creationDate){
+        this.date = creationDate;
+    }
+
+    */
 }

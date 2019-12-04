@@ -216,7 +216,7 @@ public class SalvoController {
             return new ResponseEntity<>(makeMap("error", "No está autorizado, tienes que registrar tus ships"), HttpStatus.UNAUTHORIZED);
         }
         //COMPROBAR SI SE TIENE MENOS DE 5 TIROS
-        if (salvo.getLocations().size() > 5){
+        if (salvo.getSalvoLocations().size() > 5){
             return new ResponseEntity<>(makeMap("error","salvos no mas"), HttpStatus.FORBIDDEN);
 
         }
