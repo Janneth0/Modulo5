@@ -55,17 +55,37 @@ public class Game {
         Map<String,Object> dto=new LinkedHashMap<String, Object>();
         dto.put("id", this.getId());
         dto.put("created",this.getCreationDate());
-        dto.put("gamePlayers",this.getGamePlayers());
-        dto.put("scores",this.getScores());
+        dto.put("gamePlayers",this.getGamePlayersList());
+        dto.put("scores",this.getScoresList());
         return dto;
     }
 
+    public List<Object> getScoresList() {
+        return this.getScores()
+                .stream()
+                .map(score -> score.makeScoreDTO())
+                .collect(Collectors.toList());
 
-
-
+    }
+    public List<Object> getGamePlayersList(){
+        return this.getGamePlayers()
+                .stream()
+                //.sorted(gamePlayer -> gamePlayer.getId())
+                .sorted(Comparator.comparing(GamePlayer::getId))
+                .map(GamePlayer -> GamePlayer.makeGamePlayerDTO())
+                .collect(Collectors.toList());
+    }
     public void addGamePlayer(GamePlayer gamePlayer) {
         gamePlayers.add(gamePlayer);
     }
+
+
+
+
+
+
+
+
     /*
     public void addGamePlayer(GamePlayer gamePlayer) {
         //gamePlayer.setGame(this);

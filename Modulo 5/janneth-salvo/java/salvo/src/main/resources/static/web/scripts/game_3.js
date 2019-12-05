@@ -54,19 +54,21 @@ var playerLogueado = data.player.email;
     }
     else if(data.player.email !="guest"){
         if(game.gamePlayers.length == 1 && game.gamePlayers[0].player.id!=data.player.id){
-        Gtabla += "<td class='textCenter' ><button onclick='unir(" + game.id +")' data.gameid=' " + game.id +" ' >unirse</button ></td>";
+         console.log(game.gamePlayers[0].id);
+        Gtabla += "<td class='textCenter' ><button onclick='unir(" + game.id +")' data.gameid=' " + game.gpid +" ' >unirse</button ></td>";
         }
         if(game.gamePlayers.length == 1 && game.gamePlayers[0].player.id == data.player.id){
-        Gtabla += "<td class='textCenter' ><button onclick='entrar("+game.gamePlayers[0].id+")' data.gameid=' " + game.id +" ' >ingresar</button ></td>";
+        Gtabla += "<td class='textCenter' ><button onclick='entrar("+game.gamePlayers[0].id+")' data.gameid=' " + game.gpid +" ' >ingresar</button ></td>";
         }
         if(game.gamePlayers.length == 2 ){
             if(game.gamePlayers[0].player.id == data.player.id){
-              Gtabla += "<td class='textCenter' ><button class='entrar btn btn-danger font-weight-bold' onclick='entrar("+game.gamePlayers[0].id+")' data.gameid=' " + game.id +" ' >ingresar</button ></td>";
+              Gtabla += "<td class='textCenter' ><button class='entrar btn btn-danger font-weight-bold' onclick='entrar("+game.gamePlayers[0].id+")' data.gameid=' " + game.gpid +" ' >ingresar</button ></td>";
             }
             if(game.gamePlayers[1].player.id == data.player.id){
-              Gtabla += "<td class='textCenter' ><button class='entrar btn btn-danger font-weight-bold' onclick='entrar("+game.gamePlayers[1].id+")' data.gameid=' " + game.id +" ' >ingresar</button ></td>";
+              Gtabla += "<td class='textCenter' ><button class='entrar btn btn-danger font-weight-bold' onclick='entrar("+game.gamePlayers[1].id+")' data.gameid=' " + game.gpid +" ' >ingresar</button ></td>";
             }
         }
+
     }
     });
     return Gtabla;

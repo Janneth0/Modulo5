@@ -71,12 +71,13 @@ public class GamePlayer {
 
     public Object makeGamePlayerDTO() {
         Map<String,Object> dto=new LinkedHashMap<>();
-        dto.put("id",this.getId());
-        dto.put("player",this.getPlayer().makePlayerDTO());
+        dto.put("gpid",this.getId());
+        dto.put("hasShips", this.hasShips());
+        dto.put("player", this.getPlayer().makePlayerDTO());
+       // dto.put("player",this.getPlayer().makePlayerDTO());
         return dto;
 
     }
-
     // funcion del game_view
     public Map<String, Object> gameViewDTO() {
         //se determina el oponente y se lo guarda en una variable auxiliar
@@ -107,6 +108,14 @@ public class GamePlayer {
     }
 
 
+    public String hasShips(){
+        if (this.getShips().size() > 0){
+            return  "YES";
+        }else {
+            return "NO";
+        }
+
+    }
 
 
     //***************************************DETERMINAR EL OPONENTE*****************************************************

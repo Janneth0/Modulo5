@@ -45,7 +45,7 @@ public class SalvoController {
         }
         dto.put("games", gameRepository.findAll()
                 .stream()
-                .map(game -> makeGameDTO(game))
+                .map(game -> game.makeGameDTO(game))
                 .collect(Collectors.toList())
         );
         return dto;
@@ -243,13 +243,13 @@ public class SalvoController {
         return authentication == null || authentication instanceof AnonymousAuthenticationToken;
     }
 
-    public Map<String,Object> makeGameDTO(Game game){
+    /*public Map<String,Object> makeGameDTO(Game game){
         Map<String,Object> dto=new LinkedHashMap<String, Object>();
         dto.put("id", game.getId());
         dto.put("created",game.getCreationDate());
         dto.put("gamePlayers",getAllGamePlayers(game.getGamePlayers()));
         return dto;
-    }
+    }*/
     public List<Map<String,Object>> getAllGamePlayers(Set<GamePlayer> gamePlayers){
         return gamePlayers
                 .stream()

@@ -47,6 +47,8 @@ public class Score {
     return dto;
   }
 
+
+
 //get && set
   public long getId() {
     return id;
