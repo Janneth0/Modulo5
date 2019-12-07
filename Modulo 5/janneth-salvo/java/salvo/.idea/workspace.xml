@@ -2,30 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b336a8d6-0209-4252-83e6-b3d22c508fc7" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/web/scripts/gridstack/gridstack.jQueryUI.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/web/scripts/gridstack/gridstack.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/web/scripts/jquery-3.4.1.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/web/styles/gridstack-extra.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/web/styles/gridstack.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/web/styles/normalize.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/web/styles/styles2.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/executionHistory/executionHistory.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/executionHistory/executionHistory.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/fileHashes/fileHashes.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/fileHashes/fileHashes.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/javaCompile/javaCompile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/javaCompile/javaCompile.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/resources/main/static/web/game-original.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/resources/main/static/web/game-original.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/resources/main/static/web/game-saved.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/resources/main/static/web/game-saved.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/resources/main/static/web/games.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/resources/main/static/web/games.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/resources/main/static/web/place-ship.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/resources/main/static/web/place-ship.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/resources/main/static/web/scripts/game_3.js" beforeDir="false" afterPath="$PROJECT_DIR$/build/resources/main/static/web/scripts/game_3.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/web/game1.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/web/game1.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/web/place-ship.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/web/place-ship.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/web/scripts/game_3.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/web/scripts/game_3.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/web/styles/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/web/styles/style.css" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -160,7 +137,7 @@
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="64" />
     <option name="y" value="10" />
     <option name="width" value="1228" />
@@ -259,7 +236,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1575731618987" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1575731975627" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -320,7 +297,6 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info id="Image Layers" />
       <window_info id="Designer" />
