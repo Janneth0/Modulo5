@@ -23,21 +23,7 @@ function gameTabla(data){
     let tGames = document.getElementById("gamesInfo");
     tGames.innerHTML = tgameFormateada;
 }
-/*function addTableGameHTML(data){
-    var Gtabla = '<thead class="thead-dark"><tr><th> Game ID</th><th>Fecha</th><th>Player1</th><th>Player2</th><th>State</th> ';
-    Gtabla += "<tbody>";
-    data.games.forEach(function(game){
-    Gtabla += "<tr>";
-    Gtabla += "<td>" + game.id + "</td>";
-    Gtabla += "<td>" +   new Date(game.created).toLocaleString()+ "</td>";
-    Gtabla += "<td>" + game.gamePlayers[0].player.email + "</td>";
-    Gtabla += "<td>" + (game.gamePlayers.length == 1 ? "      ":game.gamePlayers[1].player.email) + "</td>";
-    if(game.gamePlayers.length == 1 && game.gamePlayers[0].player.id!=data.player.id){
-    Gtabla += "<td class='textCenter' ><button class='joinGameButton' data.gameid=' " + game.id +" ' >unirse</button ></td>";
-    };
-    return Gtabla;
-})
-}*/
+
 function addTableGameHTML(data){
 var playerLogueado = data.player.email;
     //var Gtabla = '<thead class="thead-dark"><tr><th> Game ID</th><th>Fecha</th><th>Player1</th><th>Player2</th><th>State</th> ';
@@ -54,18 +40,24 @@ var playerLogueado = data.player.email;
     }
     else if(data.player.email !="guest"){
         if(game.gamePlayers.length == 1 && game.gamePlayers[0].player.id!=data.player.id){
-         console.log(game.gamePlayers[0].id);
-        Gtabla += "<td class='textCenter' ><button onclick='unir(" + game.id +")' data.gameid=' " + game.gpid +" ' >unirse</button ></td>";
+         console.log(game.gamePlayers[0].gpid);
+        Gtabla += "<td class='textCenter' ><button onclick='unir(" + game.id +")' data.gameid=' " + game.id +" ' >unirse</button ></td>";
+        console.log(game.gamePlayers[0].gpid);
+
         }
         if(game.gamePlayers.length == 1 && game.gamePlayers[0].player.id == data.player.id){
-        Gtabla += "<td class='textCenter' ><button onclick='entrar("+game.gamePlayers[0].id+")' data.gameid=' " + game.gpid +" ' >ingresar</button ></td>";
+        Gtabla += "<td class='textCenter' ><button onclick='entrar("+game.gamePlayers[0].gpid+")' data.gameid=' " + game.id +" ' >ingresar</button ></td>";
+        console.log(game.gamePlayers[0].gpid);
+
         }
         if(game.gamePlayers.length == 2 ){
             if(game.gamePlayers[0].player.id == data.player.id){
-              Gtabla += "<td class='textCenter' ><button class='entrar btn btn-danger font-weight-bold' onclick='entrar("+game.gamePlayers[0].id+")' data.gameid=' " + game.gpid +" ' >ingresar</button ></td>";
+              Gtabla += "<td class='textCenter' ><button class='entrar btn btn-danger font-weight-bold' onclick='entrar("+game.gamePlayers[0].gpid+")' data.gameid=' " + game.id +" ' >ingresar</button ></td>";
+            console.log(game.gamePlayers[0].gpid);
             }
             if(game.gamePlayers[1].player.id == data.player.id){
-              Gtabla += "<td class='textCenter' ><button class='entrar btn btn-danger font-weight-bold' onclick='entrar("+game.gamePlayers[1].id+")' data.gameid=' " + game.gpid +" ' >ingresar</button ></td>";
+              Gtabla += "<td class='textCenter' ><button class='entrar btn btn-danger font-weight-bold' onclick='entrar("+game.gamePlayers[1].gpid+")' data.gameid=' " + game.id +" ' >ingresar</button ></td>";
+            console.log(game.gamePlayers[0].gpid);
             }
         }
 
@@ -161,20 +153,6 @@ location.href = gameViewUrl;
    }, 1000);
 
  }
-//FIN BOTON ENTRAR A JUEGO
- /*function unir() {
-    let botonUnir = document.getElementsByName("botonUnir")
-    botonUnir.forEach(a => a.addEventListener("click", function () {
-      alert("¡¡Gracias por sumarte!!");
-     let gameId = this.getAttribute("data-gameId");
-  console.log(gameId);
-      $.post("/api/game/" +  gameId + "/player/")
-        .done(function (data) {
-          console.log(data);
-          return location.href = "/web/game.html?gp=" +  data.gpid;
-        }).fail(error => console.log(error))
-    }))
-  }*/
   function unir(data) {
           event.preventDefault();
       url = '/api/games/' + data + '/players';
