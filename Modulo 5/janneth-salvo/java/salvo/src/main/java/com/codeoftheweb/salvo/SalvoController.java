@@ -8,8 +8,6 @@ import org.springframework.security.core.Authentication;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.web.bind.annotation.*;
 
-import java.lang.reflect.Method;
-import java.net.PasswordAuthentication;
 import java.util.*;
 import java.util.stream.Collectors;
 @RestController
@@ -50,7 +48,6 @@ public class SalvoController {
         );
         return dto;
     }
-
     //-----------------verifica que el usuario y el juego existan y que el jugador pertenezca al juego
     @RequestMapping("/game_view/{nn}")
     public ResponseEntity<Map<String, Object>> getGameViewByGamePlayerID(@PathVariable Long nn, Authentication  authentication) {
@@ -114,7 +111,6 @@ public class SalvoController {
         playerRepository.save(new Player(username, passwordEncoder.encode(password)));
         return new ResponseEntity<>(HttpStatus.CREATED);
     }
-
     //---------------------------crear un juego ---------------//
     @RequestMapping(path = "/games", method = RequestMethod.POST)
     public ResponseEntity<Object> createGame(Authentication authentication) {
@@ -134,7 +130,6 @@ public class SalvoController {
 
         return new ResponseEntity<>(makeMap("gpid",gamePlayer.getId()),HttpStatus.CREATED);
     }
-
     //---------------------------unir jugador a game -----------//
     @RequestMapping(path = "/games/{id}/players", method = RequestMethod.POST)
     public ResponseEntity<Object> joinGame(@PathVariable Long id, Authentication authentication) {
@@ -163,7 +158,6 @@ public class SalvoController {
             return new ResponseEntity<>(makeMap("error", "Game is full!"), HttpStatus.FORBIDDEN);
         }
     }
-
     //------------------------crear ship---------------------------//
     @RequestMapping(path = "/games/players/{gpid}/ships",  method = RequestMethod.POST)
     public ResponseEntity<Map> addShip(@PathVariable long gpid, @RequestBody Set<Ship> ships, Authentication authentication){
@@ -233,16 +227,12 @@ public class SalvoController {
         }
         return new ResponseEntity<>(makeMap("error", "No puedes disparar en este turno"), HttpStatus.FORBIDDEN);
     }
-
     //************************************************METODOS AUXILIARES************************************************
-
     //Metodos que ayudan a los request mapping definidos
     //**********************************************ONTENER EL PLAYER LOGUEADO******************************************
-
     private boolean isGuest(Authentication authentication) {
         return authentication == null || authentication instanceof AnonymousAuthenticationToken;
     }
-
     /*public Map<String,Object> makeGameDTO(Game game){
         Map<String,Object> dto=new LinkedHashMap<String, Object>();
         dto.put("id", game.getId());
@@ -265,7 +255,6 @@ public class SalvoController {
         return dto;
     }
     // Comparo el turno que trato de crear con todos los anteriores.
-
     public boolean turnHasSalvoes (Salvo newSalvo, Set<Salvo> playerSalvoes) {
         boolean hasSalvoes = false;
         for (Salvo salvo: playerSalvoes) {
@@ -280,8 +269,6 @@ public class SalvoController {
         boolean incorrectGP = gamePlayer.getPlayer().getId() != player.getId();
         return incorrectGP;
     }
-
-
     private Map<String, Object> playerLeaderBoardDTO(Player player) {
         Map<String, Object> dto = new LinkedHashMap<>();
         dto.put("id", player.getId());

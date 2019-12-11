@@ -1,7 +1,7 @@
 crearTabla();
 leaderboard();
 //newGame();
-
+///////////////////////////////////////////////////////////////////////////////
 function leaderboard() {
     $.get('/api/leaderBoard')
         .done(function (data) {
@@ -11,6 +11,7 @@ function leaderboard() {
             scoreTable(data);
         });
 }
+/////////////////////////////////////////////////////////////////////////////////
 function crearTabla(){
     $.get("/api/games")
         .done(function(data){
@@ -18,16 +19,16 @@ function crearTabla(){
             gameTabla(data);
          } );
 }
+////////////////////////////////////////////////////////////////////////////////
 function gameTabla(data){
     let tgameFormateada = addTableGameHTML(data);
     let tGames = document.getElementById("gamesInfo");
     tGames.innerHTML = tgameFormateada;
 }
-
+//////////////////////////////////////////////////////////////////////////////////
 function addTableGameHTML(data){
 var playerLogueado = data.player.email;
-    //var Gtabla = '<thead class="thead-dark"><tr><th> Game ID</th><th>Fecha</th><th>Player1</th><th>Player2</th><th>State</th> ';
-    var Gtabla = "<tbody>";
+      var Gtabla = "<tbody>";
     data.games.forEach(function(game){
     Gtabla += "<tr>";
     Gtabla += "<td>" + game.id + "</td>";
@@ -65,13 +66,13 @@ var playerLogueado = data.player.email;
     });
     return Gtabla;
 }
-
-
+///////////////////////////////////////////////////////////////////////////////////
 function scoreTable(data) {
      let tablaFormateada = addTableHTML(data);
      let tablaScore = document.getElementById("tablaLider");
      tablaScore.innerHTML = tablaFormateada;
 }
+///////////////////////////////////////////////////////////////////////////////////
 function addTableHTML(data) {
     var tabla = '<thead  class="thead-dark" ><tr><th>Full Name</th><th>Total</th><th>Won</th><th>Lost</th><th>Tied</th></tr></thead>';
     tabla += "<tbody>";
@@ -87,14 +88,16 @@ function addTableHTML(data) {
     });
     return tabla;
 }
+//////////////////////////////////////////////////////////////////////////////////
 function newGame() {
     event.preventDefault();
     url = '/api/games/';
     $.post(url)
         .done(function (data) {
-            return location.href = "/web/game1.html?gp=" + data.gpid;
+            return location.href = "/web/place-ship.html?gp=" + data.gpid;
         })
 }
+/////////////////////////////////////////////////////////////////////////////
 function logIn() {
     event.preventDefault();
     $.post("/api/login", {
@@ -102,17 +105,20 @@ function logIn() {
             password: $("#password").val()
         })
         .done(function () {
-            crearTabla()
+            $('#loginSuccess').show("slow").delay(2000).hide("slow");
+            crearTabla();
             $("#login-form").hide(),
                 $("#logout-form").show(),
                 $("#password").val("")
         })
         .fail(function () {
             console.log("Failed to LogIn");
+               $('#loginFailed').show("slow").delay(2000).hide("slow");
             //alert("User not registered")
             alert("Usuario no Registrado")
         });
 }
+
 function signUp() {
     event.preventDefault();
     $.post("/api/players", {
@@ -134,7 +140,10 @@ function logout() {
     event.preventDefault();
     $.post("/api/logout")
         .done(function () {
+        crearTabla();
             console.log("bye");
+            $('#logoutSuccess').show("slow").delay(2000).hide("slow");
+            crearTabla();
             $("#logout-form").hide();
             $("#login-form").show()
         })
@@ -144,6 +153,7 @@ function logout() {
 };
  //BOTON ENTRAR A JUEGO DEL QUE FORMO PARTE
  function entrar (gpid) {
+     event.preventDefault();
    console.log("Estas dando click");
    alert("¡¡Regresaste!!");
    return location.href = "/web/game.html?gp=" + gpid;
@@ -158,7 +168,7 @@ location.href = gameViewUrl;
       url = '/api/games/' + data + '/players';
       $.post(url)
           .done(function (data) {
-              return location.href = "/web/game1.html?gp=" + data.gpid;
+              return location.href = "/web/place-ship.html?gp=" + data.gpid;
           })
   }
 
