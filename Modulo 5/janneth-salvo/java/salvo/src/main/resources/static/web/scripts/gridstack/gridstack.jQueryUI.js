@@ -17,9 +17,9 @@
         try { jQuery = require('jquery'); } catch (e) {}
         try { _ = require('lodash'); } catch (e) {}
         try { GridStackUI = require('gridstack'); } catch (e) {}
-        factory(jQuery,  GridStackUI);
+        factory(jQuery, _, GridStackUI);
     } else {
-        factory(jQuery,  GridStackUI);
+        factory(jQuery, _, GridStackUI);
     }
 })(function($, _, GridStackUI) {
 

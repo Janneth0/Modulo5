@@ -1,5 +1,7 @@
 package com.codeoftheweb.salvo;
 
+import com.codeoftheweb.salvo.modelos.*;
+import com.codeoftheweb.salvo.repositorios.*;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -194,7 +196,7 @@ public class SalvoController {
     }
     //-------------------------Agregar Salvos----------------------------//
     @RequestMapping(value = "/games/players/{gpid}/salvoes",  method = RequestMethod.POST)
-    public ResponseEntity<Map> addSalvo(@PathVariable long gpid, @RequestBody Salvo  salvo, Authentication authentication){
+    public ResponseEntity<Map> addSalvo(@PathVariable long gpid, @RequestBody Salvo salvo, Authentication authentication){
         if(isGuest(authentication)){
             return new ResponseEntity<>(makeMap("error","NO esta autorizado"), HttpStatus.UNAUTHORIZED);
         }

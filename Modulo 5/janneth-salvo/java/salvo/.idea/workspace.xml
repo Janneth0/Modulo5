@@ -2,126 +2,172 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b336a8d6-0209-4252-83e6-b3d22c508fc7" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/executionHistory/executionHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/executionHistory/executionHistory.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/fileHashes/fileHashes.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/fileHashes/fileHashes.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/javaCompile/classAnalysis.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/javaCompile/classAnalysis.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/javaCompile/javaCompile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/javaCompile/javaCompile.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/javaCompile/taskHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/javaCompile/taskHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/codeoftheweb/salvo/Game.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/codeoftheweb/salvo/Game.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/codeoftheweb/salvo/GamePlayer.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/codeoftheweb/salvo/GamePlayer.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/codeoftheweb/salvo/Player.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/codeoftheweb/salvo/Player.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/codeoftheweb/salvo/Game.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/codeoftheweb/salvo/GamePlayer.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/codeoftheweb/salvo/GamePlayerRepository.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/codeoftheweb/salvo/GameRepository.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/codeoftheweb/salvo/Player.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/codeoftheweb/salvo/PlayerRepository.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/codeoftheweb/salvo/Salvo.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/codeoftheweb/salvo/SalvoApplication.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/codeoftheweb/salvo/SalvoApplication.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/codeoftheweb/salvo/SalvoController.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/codeoftheweb/salvo/SalvoController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/codeoftheweb/salvo/SalvoRepository.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/codeoftheweb/salvo/Score.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/codeoftheweb/salvo/ScoreRepository.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/codeoftheweb/salvo/Ship.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/codeoftheweb/salvo/ShipRepository.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/codeoftheweb/salvo/WebSecurityConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/codeoftheweb/salvo/WebSecurityConfig.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/codeoftheweb/salvo/WebSecurityConfiguration.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/codeoftheweb/salvo/WebSecurityConfiguration.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/resources/main/static/battleship-gridStack/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/resources/main/static/battleship-gridStack/_config.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/resources/main/static/battleship-gridStack/dist/gridstack-extra.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/resources/main/static/battleship-gridStack/dist/gridstack-extra.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/resources/main/static/battleship-gridStack/dist/gridstack.all.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/resources/main/static/battleship-gridStack/dist/gridstack.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/resources/main/static/battleship-gridStack/dist/gridstack.jQueryUI.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/resources/main/static/battleship-gridStack/dist/gridstack.jQueryUI.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/resources/main/static/battleship-gridStack/dist/gridstack.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/resources/main/static/battleship-gridStack/dist/gridstack.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/resources/main/static/battleship-gridStack/dist/gridstack.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/resources/main/static/battleship-gridStack/dist/gridstack.min.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/resources/main/static/battleship-gridStack/dist/jquery-3.4.1.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/resources/main/static/battleship-gridStack/dist/jquery-ui.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/resources/main/static/battleship-gridStack/dist/jquery-ui.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/resources/main/static/battleship-gridStack/dist/jquery.ui.touch-punch.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/resources/main/static/battleship-gridStack/dist/lodash.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/resources/main/static/battleship-gridStack/dist/normalize.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/resources/main/static/battleship-gridStack/grid.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/resources/main/static/battleship-gridStack/grid.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/resources/main/static/battleship-gridStack/gridModificado.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/resources/main/static/battleship-gridStack/scripts/main.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/resources/main/static/battleship-gridStack/styles/ocean.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/resources/main/static/battleship-gridStack/styles/ships/asdfgg.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/resources/main/static/battleship-gridStack/styles/ships/battleship.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/resources/main/static/battleship-gridStack/styles/ships/battleship_vertical.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/resources/main/static/battleship-gridStack/styles/ships/carrier.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/resources/main/static/battleship-gridStack/styles/ships/carrier_vertical.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/resources/main/static/battleship-gridStack/styles/ships/destroyer.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/resources/main/static/battleship-gridStack/styles/ships/destroyer_vertical.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/resources/main/static/battleship-gridStack/styles/ships/patrol_boat.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/resources/main/static/battleship-gridStack/styles/ships/patrol_boat_vertical.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/resources/main/static/battleship-gridStack/styles/ships/submarine.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/resources/main/static/battleship-gridStack/styles/ships/submarine_vertical.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/resources/main/static/battleship-gridStack/styles/style.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/resources/main/static/web/game-original.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/resources/main/static/web/game-original.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/resources/main/static/web/game-saved.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/resources/main/static/web/game-saved.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/resources/main/static/web/css/gridstack/back1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/resources/main/static/web/css/gridstack/backships.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/resources/main/static/web/css/gridstack/battleship.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/resources/main/static/web/css/gridstack/gridstack-extra.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/resources/main/static/web/css/gridstack/gridstack.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/resources/main/static/web/css/gridstack/home-solid.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/resources/main/static/web/css/gridstack/normalize.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/resources/main/static/web/css/gridstack/ocean.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/resources/main/static/web/css/gridstack/ships/asdfgg.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/resources/main/static/web/css/gridstack/ships/battleship.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/resources/main/static/web/css/gridstack/ships/battleship_vertical.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/resources/main/static/web/css/gridstack/ships/carrier.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/resources/main/static/web/css/gridstack/ships/carrier_vertical.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/resources/main/static/web/css/gridstack/ships/destroyer.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/resources/main/static/web/css/gridstack/ships/destroyer_vertical.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/resources/main/static/web/css/gridstack/ships/patrol_boat.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/resources/main/static/web/css/gridstack/ships/patrol_boat_vertical.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/resources/main/static/web/css/gridstack/ships/submarine.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/resources/main/static/web/css/gridstack/ships/submarine_vertical.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/resources/main/static/web/css/gridstack/ships/target.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/resources/main/static/web/css/gridstack/style.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/resources/main/static/web/css/gridstack/style2.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/resources/main/static/web/css/gridstack/target-cursor.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/resources/main/static/web/css/gridstack/target.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/resources/main/static/web/game-original.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/resources/main/static/web/game-saved.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/resources/main/static/web/game.12.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/resources/main/static/web/game.12.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/resources/main/static/web/game.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/resources/main/static/web/game.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/resources/main/static/web/game1.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/resources/main/static/web/game1.1.html" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/build/resources/main/static/web/games.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/resources/main/static/web/games.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/resources/main/static/web/img/target.png" beforeDir="false" afterPath="$PROJECT_DIR$/build/resources/main/static/web/img/target.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/resources/main/static/web/js/bootstrap.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/resources/main/static/web/js/game-original.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/resources/main/static/web/js/game-saved.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/resources/main/static/web/js/game.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/resources/main/static/web/js/games.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/resources/main/static/web/js/grid.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/resources/main/static/web/js/gridstack/gridstack.jQueryUI.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/resources/main/static/web/js/gridstack/jquery-ui.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/resources/main/static/web/js/gridstack/jquery.ui.touch-punch.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/resources/main/static/web/js/jquery-3.3.1.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/resources/main/static/web/js/popper.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/resources/main/static/web/js/salvoGrid.js" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/build/resources/main/static/web/place-ship.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/resources/main/static/web/place-ship.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/resources/main/static/web/scripts/bootstrap.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/build/resources/main/static/web/scripts/bootstrap.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/resources/main/static/web/scripts/game_3.js" beforeDir="false" afterPath="$PROJECT_DIR$/build/resources/main/static/web/scripts/game_3.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/resources/main/static/web/styles/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/build/resources/main/static/web/styles/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/codeoftheweb/salvo/Game.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/codeoftheweb/salvo/Game.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/codeoftheweb/salvo/GamePlayer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/codeoftheweb/salvo/GamePlayer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/codeoftheweb/salvo/GamePlayerRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/codeoftheweb/salvo/GamePlayerRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/codeoftheweb/salvo/GameRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/codeoftheweb/salvo/GameRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/codeoftheweb/salvo/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/codeoftheweb/salvo/Player.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/codeoftheweb/salvo/PlayerRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/codeoftheweb/salvo/PlayerRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/codeoftheweb/salvo/Salvo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/codeoftheweb/salvo/Salvo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/resources/main/static/web/scripts/bootstrap.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/resources/main/static/web/scripts/game-original.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/resources/main/static/web/scripts/game-saved.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/resources/main/static/web/scripts/game.js" beforeDir="false" afterPath="$PROJECT_DIR$/build/resources/main/static/web/scripts/game.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/resources/main/static/web/scripts/game_3.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/resources/main/static/web/scripts/jquery-3.3.1.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/resources/main/static/web/scripts/popper.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/resources/main/static/web/styles/back1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/resources/main/static/web/styles/backships.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/resources/main/static/web/styles/battleship.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/resources/main/static/web/styles/home-solid.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/resources/main/static/web/styles/ocean.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/resources/main/static/web/styles/target-cursor.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/resources/main/static/web/styles/target.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/codeoftheweb/salvo/Game.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/codeoftheweb/salvo/modelos/Game.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/codeoftheweb/salvo/GamePlayer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/codeoftheweb/salvo/modelos/GamePlayer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/codeoftheweb/salvo/GamePlayerRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/codeoftheweb/salvo/repositorios/GamePlayerRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/codeoftheweb/salvo/GameRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/codeoftheweb/salvo/repositorios/GameRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/codeoftheweb/salvo/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/codeoftheweb/salvo/modelos/Player.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/codeoftheweb/salvo/PlayerRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/codeoftheweb/salvo/repositorios/PlayerRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/codeoftheweb/salvo/Salvo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/codeoftheweb/salvo/modelos/Salvo.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/codeoftheweb/salvo/SalvoApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/codeoftheweb/salvo/SalvoApplication.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/codeoftheweb/salvo/SalvoController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/codeoftheweb/salvo/SalvoController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/codeoftheweb/salvo/SalvoRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/codeoftheweb/salvo/SalvoRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/codeoftheweb/salvo/Score.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/codeoftheweb/salvo/Score.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/codeoftheweb/salvo/ScoreRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/codeoftheweb/salvo/ScoreRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/codeoftheweb/salvo/Ship.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/codeoftheweb/salvo/Ship.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/codeoftheweb/salvo/ShipRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/codeoftheweb/salvo/ShipRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/battleship-gridStack/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/battleship-gridStack/_config.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/battleship-gridStack/dist/gridstack-extra.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/battleship-gridStack/dist/gridstack-extra.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/battleship-gridStack/dist/gridstack.all.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/battleship-gridStack/dist/gridstack.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/battleship-gridStack/dist/gridstack.jQueryUI.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/battleship-gridStack/dist/gridstack.jQueryUI.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/battleship-gridStack/dist/gridstack.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/battleship-gridStack/dist/gridstack.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/battleship-gridStack/dist/gridstack.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/battleship-gridStack/dist/gridstack.min.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/battleship-gridStack/dist/jquery-3.4.1.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/battleship-gridStack/dist/jquery-ui.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/battleship-gridStack/dist/jquery-ui.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/battleship-gridStack/dist/jquery.ui.touch-punch.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/battleship-gridStack/dist/lodash.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/battleship-gridStack/dist/normalize.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/battleship-gridStack/grid.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/battleship-gridStack/grid.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/battleship-gridStack/gridModificado.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/battleship-gridStack/scripts/main.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/battleship-gridStack/styles/ocean.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/battleship-gridStack/styles/ships/asdfgg.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/battleship-gridStack/styles/ships/battleship.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/battleship-gridStack/styles/ships/battleship_vertical.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/battleship-gridStack/styles/ships/carrier.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/battleship-gridStack/styles/ships/carrier_vertical.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/battleship-gridStack/styles/ships/destroyer.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/battleship-gridStack/styles/ships/destroyer_vertical.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/battleship-gridStack/styles/ships/patrol_boat.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/battleship-gridStack/styles/ships/patrol_boat_vertical.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/battleship-gridStack/styles/ships/submarine.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/battleship-gridStack/styles/ships/submarine_vertical.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/battleship-gridStack/styles/style.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/codeoftheweb/salvo/SalvoRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/codeoftheweb/salvo/repositorios/SalvoRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/codeoftheweb/salvo/Score.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/codeoftheweb/salvo/modelos/Score.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/codeoftheweb/salvo/ScoreRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/codeoftheweb/salvo/repositorios/ScoreRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/codeoftheweb/salvo/Ship.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/codeoftheweb/salvo/modelos/Ship.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/codeoftheweb/salvo/ShipRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/codeoftheweb/salvo/repositorios/ShipRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/web/css/bootstrap.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/web/css/game.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/web/css/gridstack/back1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/web/styles/gridstack/back1.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/web/css/gridstack/backships.gif" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/web/styles/gridstack/backships.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/web/css/gridstack/battleship.gif" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/web/img/battleship.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/web/css/gridstack/gridstack-extra.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/web/styles/gridstack/gridstack-extra.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/web/css/gridstack/gridstack.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/web/styles/gridstack/gridstack.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/web/css/gridstack/home-solid.svg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/web/img/home-solid.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/web/css/gridstack/normalize.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/web/styles/gridstack/normalize.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/web/css/gridstack/ocean.gif" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/web/img/ocean.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/web/css/gridstack/ships/asdfgg.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/web/styles/gridstack/ships/asdfgg.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/web/css/gridstack/ships/battleship.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/web/styles/gridstack/ships/battleship.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/web/css/gridstack/ships/battleship_vertical.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/web/styles/gridstack/ships/battleship_vertical.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/web/css/gridstack/ships/carrier.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/web/styles/gridstack/ships/carrier.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/web/css/gridstack/ships/carrier_vertical.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/web/styles/gridstack/ships/carrier_vertical.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/web/css/gridstack/ships/destroyer.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/web/styles/gridstack/ships/destroyer.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/web/css/gridstack/ships/destroyer_vertical.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/web/styles/gridstack/ships/destroyer_vertical.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/web/css/gridstack/ships/patrol_boat.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/web/styles/gridstack/ships/patrol_boat.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/web/css/gridstack/ships/patrol_boat_vertical.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/web/styles/gridstack/ships/patrol_boat_vertical.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/web/css/gridstack/ships/submarine.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/web/styles/gridstack/ships/submarine.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/web/css/gridstack/ships/submarine_vertical.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/web/styles/gridstack/ships/submarine_vertical.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/web/css/gridstack/ships/target.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/web/styles/gridstack/ships/target.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/web/css/gridstack/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/web/styles/gridstack/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/web/css/gridstack/style2.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/web/styles/gridstack/style2.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/web/css/gridstack/target-cursor.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/web/img/target-cursor.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/web/css/gridstack/target.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/web/styles/gridstack/target.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/web/css/style.css" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/static/web/game-original.html" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/static/web/game-saved.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/web/game.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/web/game.12.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/web/game1.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/web/game1.1.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/web/game.12.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/web/game.12.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/web/game.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/web/game.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/web/game1.1.html" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/static/web/games.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/web/games.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/web/place-ship.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/web/scripts/bootstrap.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/web/scripts/bootstrap.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/web/scripts/game_3.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/web/scripts/game_3.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/web/img/target.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/web/img/target.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/web/js/bootstrap.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/web/scripts/gridstack/bootstrap.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/web/js/game-original.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/web/scripts/gridstack/game-original.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/web/js/game-saved.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/web/scripts/gridstack/game-saved.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/web/js/game.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/web/scripts/gridstack/game.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/web/js/games.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/web/scripts/gridstack/games.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/web/js/grid.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/web/scripts/gridstack/grid.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/web/js/gridstack/gridstack.jQueryUI.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/web/js/gridstack/gridstack.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/web/js/gridstack/jquery-3.4.1.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/web/scripts/gridstack/jquery-3.4.1.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/web/js/gridstack/jquery-ui.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/web/scripts/gridstack/jquery-ui.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/web/js/gridstack/jquery.ui.touch-punch.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/web/scripts/gridstack/jquery.ui.touch-punch.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/web/js/gridstack/lodash.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/web/scripts/gridstack/lodash.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/web/js/gridstack/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/web/scripts/gridstack/main.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/web/js/jquery-3.3.1.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/web/scripts/gridstack/jquery-3.3.1.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/web/js/popper.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/web/scripts/gridstack/popper.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/web/js/salvoGrid.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/web/scripts/gridstack/salvoGrid.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/web/place-ship.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/web/place-ship.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/web/scripts/bootstrap.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/web/scripts/game-original.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/web/scripts/grid.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/web/scripts/game-saved.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/web/scripts/game.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/web/scripts/game.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/web/scripts/game_3.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/web/scripts/games.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/web/scripts/gridstack/gridstack.jQueryUI.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/web/scripts/gridstack/gridstack.jQueryUI.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/web/scripts/gridstack/gridstack.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/web/scripts/gridstack/gridstack.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/web/scripts/jquery-3.3.1.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/web/scripts/jquery-3.4.1.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/web/scripts/popper.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/web/styles/back1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/web/styles/backships.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/web/styles/battleship.gif" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/web/styles/gridstack/battleship.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/web/styles/game.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/web/styles/game.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/web/styles/home-solid.svg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/web/styles/gridstack/home-solid.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/web/styles/ocean.gif" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/web/styles/gridstack/ocean.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/web/styles/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/web/styles/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/web/styles/target-cursor.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/web/styles/gridstack/target-cursor.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/web/styles/target.png" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -185,14 +231,15 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/resources/static/web/scripts/gridstack" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\}\Desktop\Modulo5\Modulo 5\janneth-salvo\java\salvo\src\main\resources\static\web\scripts\gridstack" />
+      <recent name="C:\Users\}\Desktop\Modulo5\Modulo 5\janneth-salvo\java\salvo\src\main\resources\static\web\scripts" />
+      <recent name="C:\Users\}\Desktop\Modulo5\Modulo 5\janneth-salvo\java\salvo\src\main\resources\static\web\styles" />
+      <recent name="C:\Users\}\Desktop\Modulo5\Modulo 5\janneth-salvo\java\salvo\src\main\resources\static\web\img" />
+      <recent name="C:\Users\}\Desktop\Modulo5\Modulo 5\janneth-salvo\java\salvo\src\main\java\com\codeoftheweb\salvo" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\}\Desktop\Modulo5\Modulo 5\janneth-salvo\java\salvo\src\main\resources\static\web\scripts\gridstack" />
-    </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\}\Desktop\Modulo5\Modulo 5\janneth-salvo\java\salvo\src\main\resources\static\web" />
-      <recent name="C:\Users\}\Desktop\Modulo5\Modulo 5\janneth-salvo\java\salvo\src\main\resources\static\web\scripts" />
-      <recent name="C:\Users\alumno\Desktop\Modulo5\Modulo 5\janneth-salvo\java\salvo\src\main\resources\static\web\styles" />
-      <recent name="C:\Users\alumno\Desktop\Modulo5\Modulo 5\janneth-salvo\java\salvo\src\main\resources\static\web\styles\ships" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -271,11 +318,16 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
           </value>
         </entry>
       </map>
     </option>
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/salvo$salvo__bootRun_.ic" NAME="salvo [bootRun] Coverage Results" MODIFIED="1576177826345" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
   </component>
   <component name="masterDetails">
     <states>

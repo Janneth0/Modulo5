@@ -11,9 +11,9 @@
     } else if (typeof exports !== 'undefined') {
         try { jQuery = require('jquery'); } catch (e) {}
         try { _ = require('lodash'); } catch (e) {}
-        factory(jQuery,);
+        factory(jQuery, _);
     } else {
-        factory(jQuery,);
+        factory(jQuery, _);
     }
 })(function($, _) {
 
