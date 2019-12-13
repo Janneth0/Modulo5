@@ -45,13 +45,11 @@ var playerLogueado = data.player.email;
         Gtabla += "<td class='textCenter' ><button onclick='unir(" + game.id +")' data.gameid=' " + game.id +" ' >unirse</button ></td>";
         console.log(game.gamePlayers[0].gpid);
 
-        }
-        if(game.gamePlayers.length == 1 && game.gamePlayers[0].player.id == data.player.id){
+        }else if(game.gamePlayers.length == 1 && game.gamePlayers[0].player.id == data.player.id){
         Gtabla += "<td class='textCenter' ><button onclick='entrar("+game.gamePlayers[0].gpid+")' data.gameid=' " + game.id +" ' >ingresar</button ></td>";
         console.log(game.gamePlayers[0].gpid);
 
-        }
-        if(game.gamePlayers.length == 2 ){
+        }else if(game.gamePlayers.length == 2 ){
             if(game.gamePlayers[0].player.id == data.player.id){
               Gtabla += "<td class='textCenter' ><button class='entrar btn btn-danger font-weight-bold' onclick='entrar("+game.gamePlayers[0].gpid+")' data.gameid=' " + game.id +" ' >ingresar</button ></td>";
             console.log(game.gamePlayers[0].gpid);
@@ -59,6 +57,9 @@ var playerLogueado = data.player.email;
             if(game.gamePlayers[1].player.id == data.player.id){
               Gtabla += "<td class='textCenter' ><button class='entrar btn btn-danger font-weight-bold' onclick='entrar("+game.gamePlayers[1].gpid+")' data.gameid=' " + game.id +" ' >ingresar</button ></td>";
             console.log(game.gamePlayers[0].gpid);
+            }
+            if(game.gamePlayers[1].player.id != data.player.id && game.gamePlayers[0].player.id != data.player.id){
+                       Gtabla += "<td class='textCenter' >No puedes ingresar</td>";
             }
         }
 
@@ -156,7 +157,7 @@ function logout() {
      event.preventDefault();
    console.log("Estas dando click");
    alert("¡¡Regresaste!!");
-   return location.href = "/web/game.html?gp=" + gpid;
+   return location.href = "/web/game.12.html?gp=" + gpid;
  setTimeout(
   function () {
 location.href = gameViewUrl;

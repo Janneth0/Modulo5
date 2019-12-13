@@ -15,7 +15,6 @@ import java.util.stream.Collectors;
 @RestController
 @RequestMapping("/api")
 public class SalvoController {
-
     @Autowired
     private PasswordEncoder passwordEncoder;
 

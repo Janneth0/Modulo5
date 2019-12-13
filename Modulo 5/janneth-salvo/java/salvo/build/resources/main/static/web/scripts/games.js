@@ -156,7 +156,7 @@ function logout() {
      event.preventDefault();
    console.log("Estas dando click");
    alert("¡¡Regresaste!!");
-   return location.href = "/web/game.html?gp=" + gpid;
+   return location.href = "/web/game.12.html?gp=" + gpid;
  setTimeout(
   function () {
 location.href = gameViewUrl;

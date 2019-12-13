@@ -1,3 +1,6 @@
+
+
+
 //main function that shoots the gridstack.js framework and loads the grid with the ships
 const loadGrid = function (isStatic) {
     var options = {
